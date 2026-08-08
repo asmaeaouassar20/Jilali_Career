@@ -28,4 +28,7 @@ Plateforme de simulation d'entretiens techniques destinée aux développeurs web
 **Career Guidance**
 → Explore career paths and get guidance based on your interests and goals
 
+**Add Note**
+→ Write down your thoughts, ideas, reminders, and personal notes to keep track of what matters to you.
+
 **Log Out**

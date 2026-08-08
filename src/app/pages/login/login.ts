@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Global } from '../../core/constant/Global.constant';
 
 @Component({
   selector: 'app-login',
@@ -18,7 +19,8 @@ export class Login {
   
   onLogin(){
     if(this.loginObj.email == "jilali@entretien.com" && this.loginObj.password=="jilali"){
-      this.router.navigateByUrl('jilaliapp/dashboard')
+      localStorage.setItem(Global.LOGIN_LOCAL_KEY, JSON.stringify(this.loginObj))
+      this.router.navigateByUrl('jilaliapp/dashboard')            
     }else{
       alert("identifiants incorrects");
     }    

@@ -17,16 +17,16 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    min-height: 100vh;
-    display: flex;
+    /* min-height: 100vh; */
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background:
       radial-gradient(700px circle at 20% 20%, rgba(99,102,241,0.16), transparent 60%),
       radial-gradient(700px circle at 80% 85%, rgba(124,127,255,0.14), transparent 60%),
       var(--bg);
     font-family: 'Inter', sans-serif;
     color: var(--text);
-    padding: 24px;
+    /* padding: 24px; */
     overflow: hidden;
   }

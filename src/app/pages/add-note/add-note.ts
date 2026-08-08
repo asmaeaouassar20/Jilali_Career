@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './add-note.css',
 })
 export class AddNote {
-
+  showAddNoteModal(){
+    alert('add note ')
+  }
 }

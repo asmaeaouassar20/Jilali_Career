@@ -2,10 +2,11 @@ import { Component, inject } from '@angular/core';
 import { IUser } from '../../core/model/interfaces/User.model';
 import { Global } from '../../core/constant/Global.constant';
 import { Router } from '@angular/router';
+import { Navappjilali } from "../../components/navappjilali/navappjilali";
 
 @Component({
   selector: 'app-layout',
-  imports: [],
+  imports: [Navappjilali],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
 })

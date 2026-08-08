@@ -21,63 +21,6 @@
   }
 
   
-
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    margin-top: 4px;
-  }
-
-  .nav-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    padding: 14px 12px 8px;
-  }
-
-  .nav-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 10px 12px;
-    border-radius: 10px;
-    color: var(--text-soft);
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    transition: background 0.18s ease, color 0.18s ease;
-    position: relative;
-  }
-
-  .nav-item svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
-
-  .nav-item:hover {
-    background: rgba(99,102,241,0.08);
-    color: var(--text);
-  }
-
-  .nav-item.active {
-    background: rgba(99,102,241,0.14);
-    color: #fff;
-  }
-
-  .nav-item.active::before {
-    content: "";
-    position: absolute;
-    left: -18px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 3px;
-    height: 18px;
-    border-radius: 3px;
-    background: linear-gradient(180deg, var(--indigo-light), var(--indigo));
-    box-shadow: 0 0 10px rgba(99,102,241,0.8);
-  }
-
   .sidebar-foot {
     margin-top: auto;
     display: flex;

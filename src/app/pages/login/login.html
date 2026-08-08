@@ -1,1 +1,39 @@
-<p>login works!</p>
+
+
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+
+  <div class="card">
+    
+
+    <h1>Welcome back</h1>
+    <p class="subtitle">Sign in to continue to your account</p>
+
+    <form>
+      <div class="field">
+        <label for="email">Email</label>
+        <div class="input-wrap">
+          <input type="email" id="email" name="email" [(ngModel)]="loginObj.email" placeholder="you@example.com" required>
+          <svg viewBox="0 0 24 24">
+            <path d="M3 6.5l9 6.5 9-6.5"/>
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="input-wrap">
+          <input type="password" id="password" name="password" [(ngModel)]="loginObj.password" placeholder="••••••••" required>
+          <svg viewBox="0 0 24 24">
+            <rect x="5" y="11" width="14" height="9" rx="2"/>
+            <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+          </svg>
+        </div>
+      </div>    
+
+      <button type="submit" (click)="onLogin()">Sign In</button>
+    </form>
+
+    <p class="divider">Don't have an account? <a href="#">Sign up</a></p>
+  </div>

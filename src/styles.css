@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+ :root {
+    --bg: #0B0F1E;
+    --bg-deep: #060810;
+    --surface: #12172B;
+    --surface-2: #171D35;
+    --indigo: #6366F1;
+    --indigo-light: #8B8FF7;
+    --indigo-dark: #4548C9;
+    --violet-glow: #7C7FFF;
+    --text: #EDEEF7;
+    --text-soft: #9295B3;
+    --border: #262C48;
+    --radius: 18px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+      radial-gradient(700px circle at 20% 20%, rgba(99,102,241,0.16), transparent 60%),
+      radial-gradient(700px circle at 80% 85%, rgba(124,127,255,0.14), transparent 60%),
+      var(--bg);
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    padding: 24px;
+    overflow: hidden;
+  }

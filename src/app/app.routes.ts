@@ -19,7 +19,7 @@ export const routes: Routes = [
         component: Login
     },
     {
-        path: 'layout',
+        path: 'jilaliapp',
         component: Layout,
         children: [
             {

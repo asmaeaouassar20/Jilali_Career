@@ -1,31 +1,11 @@
 
-  /* ambient floating shapes */
-  .orb {
-    position: fixed;
-    border-radius: 50%;
-    filter: blur(70px);
-    opacity: 0.5;
-    z-index: 0;
-    animation: float 12s ease-in-out infinite;
-  }
-  .orb.a {
-    width: 340px; height: 340px;
-    background: var(--indigo);
-    top: -100px; left: -110px;
-    animation-delay: 0s;
-  }
-  .orb.b {
-    width: 280px; height: 280px;
-    background: var(--violet-glow);
-    bottom: -110px; right: -90px;
-    animation-delay: -6s;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(24px, -26px) scale(1.07); }
-  }
-
+.container{
+  min-height: 100vh;
+  max-width: 100vw;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   .card {
     position: relative;
     z-index: 1;
@@ -211,7 +191,7 @@
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .card, .field, button, .divider, .orb {
+    .card, .field, button, .divider{
       animation: none !important;
       opacity: 1 !important;
     }

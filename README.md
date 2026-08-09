@@ -73,3 +73,6 @@ export class NavappjilaliComponent {
 <br/>
 
 #### (3) Entre composants "Frères" ou Éloignés (Via un Service)
+- On a une page AddNoteComponent et une page DashboardComponent
+- Ce sont deux pages distinctes liées aux routes. Elles n'ont pas de relation Parent-Enfant directe.
+- Quand on ajoute une note dans AddNoteComponent, le tableau de bord DashboardComponent doit se mettre à jour instantanément pour afficher la nouvelle note.

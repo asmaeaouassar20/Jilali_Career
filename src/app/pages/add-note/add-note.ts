@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, contentChild, inject, OnInit } from '@angular/core';
 import { NoteModel } from '../../core/model/classes/Note.model';
 import { Router } from '@angular/router';
 import { AddNoteModal } from "../../components/add-note-modal/add-note-modal";
@@ -19,8 +19,7 @@ export class AddNote implements OnInit {
 
   myNotes! : NoteModel[];
 
-  // 
-
+  
   ngOnInit() : void {
     this.loadAllNotes();
   }
@@ -49,7 +48,12 @@ export class AddNote implements OnInit {
     this.isModalAddNoteOpen=false;
   }
   
-  onSaveUserNote(){
-
+  receiveNewNoteAndSave(newNote:NoteModel){
+    const idOfLastNote = this.myNotes[this.myNotes.length-1].id;
+    newNote.id= idOfLastNote+1;
+    this.myNotes.push(newNote);
+    localStorage.setItem('my-notes', JSON.stringify(this.myNotes))
+    this.closeModalAddNote()
   }
+
 }

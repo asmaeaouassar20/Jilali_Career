@@ -23,6 +23,8 @@
 
   <app-add-note-modal
     [isOpen]="isModalAddNoteOpen"
-    (close)="closeModalAddNote()" />
+    (close)="closeModalAddNote()" 
+    (newNoteValues)="receiveNewNoteAndSave($event)"
+  />
 
 </div>

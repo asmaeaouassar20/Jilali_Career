@@ -1,6 +1,6 @@
 @if(isOpen){
     <div class="modal-overlay">
-    <div class="modal">
+    <form class="modal" [formGroup]="form" (ngSubmit)="addNewNote()" >
         <div class="modal-header">
             <h2>Add a Note</h2>
             <button class="close-btn" (click)="closeModal()">x</button>
@@ -8,12 +8,13 @@
    
     <div class="modal-body">
         <p>Write your thoyghts here</p>
+        <input class="input-title" placeholder="add title" />
         <textarea placeholder="Write your note..."></textarea>
     </div>
     <div class="modal-footer">
         <button class="cancel-btn" (click)="closeModal()">Cancel</button>
-        <button class="save-btn">Save</button>
+        <button class="save-btn" type="submit">Save</button>
     </div>
- </div>
+</form>
 </div>
 }

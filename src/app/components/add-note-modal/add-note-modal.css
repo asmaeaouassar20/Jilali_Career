@@ -98,16 +98,30 @@
   outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
+.modal-body .input-title {
+  width: 100%;
+  resize: vertical;
+  font-family: 'Inter', sans-serif;
+  font-size: 14.5px;
+  padding: 12px 16px;
+  border: 1.5px solid #262C48;
+  margin: 5px auto;
+  border-radius: 12px;
+  background: #060810;
+  color: #EDEEF7;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
 
-.modal-body textarea::placeholder {
+.modal-body textarea::placeholder ,  .input-title::placeholder {
   color: #565C7C;
 }
 
-.modal-body textarea:hover {
+.modal-body textarea:hover  {
   border-color: #4548C9;
 }
 
-.modal-body textarea:focus {
+.modal-body textarea:focus , .input-title:focus {
   border-color: #6366F1;
   background: #0D1122;
   box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.22);

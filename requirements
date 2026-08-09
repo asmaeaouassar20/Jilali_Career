@@ -9,3 +9,4 @@
 - use modal to add new note
 - pointer cursor on links navbar
 - "active" link in navbar
+- add : createdAt and delete btn in AddNote Compoenent

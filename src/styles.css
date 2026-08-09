@@ -17,6 +17,8 @@
   --border: #262C48;
   --bordergreen: #262C48;
   --radius: 18px;
+  --radius-table: 8px;
+  --danger: #F16A6A;
 }
 
 * {

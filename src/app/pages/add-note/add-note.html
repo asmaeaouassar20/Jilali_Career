@@ -1,17 +1,28 @@
 <div class="container-cards">
 
-  <div class="note-card" (click)="openModalAddNote()">
+  <div class="note-card-add">
     <div class="icon-circle">
-      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
     </div>
     <h3>Add Note</h3>
-    <p>Write down your thoughts, ideas, reminders, and personal notes to keep track of what matters to you.</p>
+    <p>Write down your thoughts, ideas, reminders, and personal notes to keep
+      track of what matters to you.</p>
   </div>
-  
-  
+
+  @for (n of myNotes; track $index) {
+  <div class="note-card">
+    <div class="icon-circle">
+      <svg viewBox="0 0 24 24">
+        <path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h4" />
+      </svg>
+    </div>
+    <h3>{{n.title}}</h3>
+    <p>{{n.content}}</p>
+  </div>
+  }
+
   <app-add-note-modal
-  [isOpen]="isModalAddNoteOpen"
-  (close)="closeModalAddNote()"
-   />
+    [isOpen]="isModalAddNoteOpen"
+    (close)="closeModalAddNote()" />
 
 </div>

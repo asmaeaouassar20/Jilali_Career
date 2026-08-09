@@ -1,11 +1,13 @@
 <div class="container-cards">
 
-  <div class="note-card" (click)="showAddNoteModal()">
+  <div class="note-card" (click)="openModalAddNote()">
     <div class="icon-circle">
       <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
     </div>
     <h3>Add Note</h3>
     <p>Write down your thoughts, ideas, reminders, and personal notes to keep track of what matters to you.</p>
   </div>
+  
+  <app-add-note-modal />
 
 </div>

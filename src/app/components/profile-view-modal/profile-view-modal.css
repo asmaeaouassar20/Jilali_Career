@@ -107,17 +107,6 @@
     margin-bottom: 14px;
   }
 
-  .status-dot {
-    position: absolute;
-    bottom: -3px;
-    right: -3px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: #5FE0A4;
-    border: 3px solid var(--surface);
-    box-shadow: 0 0 8px rgba(95, 224, 164, 0.7);
-  }
 
   .identity h3 {
     font-family: 'Fraunces', serif;
@@ -132,22 +121,7 @@
     color: var(--text-soft);
     margin-top: 3px;
   }
-
-  .role-pill {
-    margin-top: 12px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    background: rgba(99, 102, 241, 0.14);
-    border: 1px solid rgba(99, 102, 241, 0.35);
-    color: var(--indigo-light);
-    font-size: 12px;
-    font-weight: 600;
-  }
-
-  .role-pill svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2; }
+  
 
   /* ---------- Info list ---------- */
   .info-list {

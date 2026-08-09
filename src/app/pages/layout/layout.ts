@@ -19,8 +19,9 @@ export class Layout {
       this.loggedUser = JSON.parse(localUser);
     }
   }
-  onLogout(){
-    localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
-    this.router.navigate(["/home"]);
+  handleUserLogout(){
+    // localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
+    // this.router.navigate(["/home"]);
+    console.log("logout from layout")
   }
 }

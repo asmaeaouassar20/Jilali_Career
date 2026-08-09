@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { RouterLink } from "@angular/router";
 import { IUser } from '../../core/model/interfaces/User.model';
 
@@ -13,4 +13,14 @@ export class Navappjilali {
 
   // Syntaxe moderne avec Signals (Angular 17+) :
   // username = input<string>('');
+
+
+  // Enfant(navbar) ->  Parent(Layout)
+  // déclarer un événement personnalisé
+  @Output() logout = new EventEmitter<void>();
+
+  onLogoutClick(){
+    // emettre l'événement vers le parent
+    this.logout.emit();
+  }
 }

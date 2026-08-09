@@ -37,7 +37,7 @@ Plateforme de simulation d'entretiens techniques destinée aux développeurs web
 <hr/>
 
 ### Communication entre deux composants
-#### On utilise @Input pour la communication entre "Parent" et "Enfant" : du PARENT vers ENFANT
+#### (1) On utilise @Input pour la communication entre "Parent" et "Enfant" : du PARENT vers ENFANT
 - Le composant LayoutComponent contient sans doute le composant NavappjilaliComponent
 - Le LayoutComponent connaît l'utilisateur connecté et veut donner son nom à la barre de navigation NavappjilaliComponent pour l'afficher
 - Dans l'enfant (navappjilali.ts) :
@@ -46,3 +46,30 @@ export class Navappjilali {
   @Input() loggedUser! : IUser; 
 }
 ```
+
+<br/>
+
+#### (2) De l'Enfant vers le Parent (@Output ou output())
+- L'utilisateur clique sur le bouton "Déconnexion" situé dans ta barre de navigation NavappjilaliComponent.
+- L'enfant (NavappjilaliComponent) capte le clic, mais c'est le parent (LayoutComponent ou LoginComponent) qui doit gérer la logique de déconnexion et la redirection.
+- Dans l'enfant (navappjilali.ts) :
+```
+export class NavappjilaliComponent {
+  // Déclare un événement personnalisé
+  @Output() logout = new EventEmitter<void>();
+
+  onLogoutClick() {
+    // Émet l'événement vers le parent
+    this.logout.emit();
+  }
+}
+```
+- Dans le parent (layout.html) :
+```
+<!-- Le parent écoute l'événement émis entre parenthèses () -->
+<app-navappjilali (logout)="handleUserLogout()"></app-navappjilali>
+```
+
+<br/>
+
+#### (3) Entre composants "Frères" ou Éloignés (Via un Service)

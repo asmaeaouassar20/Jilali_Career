@@ -8,6 +8,10 @@
     <p>Write down your thoughts, ideas, reminders, and personal notes to keep track of what matters to you.</p>
   </div>
   
-  <app-add-note-modal />
+  
+  <app-add-note-modal
+  [isOpen]="isModalAddNoteOpen"
+  (close)="closeModalAddNote()"
+   />
 
 </div>

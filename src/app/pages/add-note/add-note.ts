@@ -13,8 +13,15 @@ import { AddNoteModal } from "../../components/add-note-modal/add-note-modal";
 export class AddNote {  
   newUserNote = new NoteModel(); // initialiser la note
   noteService = inject(Router);
+
+  // modal to add new note
+  isModalAddNoteOpen : boolean = false;
+
   openModalAddNote(){
-    alert('add note ')
+    this.isModalAddNoteOpen=true;
+  }
+  closeModalAddNote(){
+    this.isModalAddNoteOpen=false;
   }
   onSaveUserNote(){
 

@@ -4,6 +4,8 @@ import { Home } from './pages/home/home';
 import { Layout } from './pages/layout/layout';
 import { Dashboard } from './pages/dashboard/dashboard';
 import { AddNote } from './pages/add-note/add-note';
+import { Review } from './pages/review/review';
+import { CareerAdvice } from './pages/career-advice/career-advice';
 
 export const routes: Routes = [
     {
@@ -30,7 +32,15 @@ export const routes: Routes = [
             {
                 path: 'new-note',
                 component: AddNote
-            }
+            },
+            {
+                path: 'review',
+                component: Review
+            },
+            {
+                path: 'career',
+                component: CareerAdvice
+            },
         ]
     }
 ];

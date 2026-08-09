@@ -1,68 +1,46 @@
 
 
-  <div class="wrap">
-    <div class="panel-head">
-      <div>
-        <h1>My notes</h1>
-        <p>All your saved notes</p>
-      </div>
-      <button class="new-btn">
-        <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
-        add a new note
-      </button>
+<div class="wrap">
+  <div class="panel-head">
+    <div>
+      <h1>My notes</h1>
+      <p>All your saved notes</p>
     </div>
-
-    <div class="table-card">
-      <table>
-        <thead>
-          <tr>
-            <th class="col-id">ID</th>
-            <th>Title</th>
-            <th class="col-content">Content</th>
-            <th class="col-date">Created At</th>
-            <th class="col-actions">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="col-id">#001</td>
-            <td class="col-title">Idée de projet</td>
-            <td class="col-content">Lancer une application de suivi d'habitudes avec rappels intelligents et statistiques hebdomadaires.</td>
-            <td class="col-date">12 juil. 2026<span class="rel">Il y a 4 semaines</span></td>
-            <td class="col-actions">              
-              <button class="icon-btn danger"><svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-id">#002</td>
-            <td class="col-title">Liste de courses</td>
-            <td class="col-content">Farine, œufs, lait, tomates, basilic frais, huile d'olive, pâtes complètes.</td>
-            <td class="col-date">2 août 2026<span class="rel">Il y a 1 semaine</span></td>
-            <td class="col-actions">              
-              <button class="icon-btn danger"><svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-id">#003</td>
-            <td class="col-title">Réunion client</td>
-            <td class="col-content">Préparer la démo, revoir le devis, envoyer le compte-rendu avant vendredi.</td>
-            <td class="col-date">7 août 2026<span class="rel">Il y a 2 jours</span></td>
-            <td class="col-actions">
-              
-              <button class="icon-btn danger"><svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></button>
-            </td>
-          </tr>
-          <tr>
-            <td class="col-id">#004</td>
-            <td class="col-title">Citation inspirante</td>
-            <td class="col-content">"La discipline est le pont entre les objectifs et les résultats." — À relire chaque matin.</td>
-            <td class="col-date">9 août 2026<span class="rel">Aujourd'hui</span></td>
-            <td class="col-actions">
-              
-              <button class="icon-btn danger"><svg viewBox="0 0 24 24"><path d="M3 6h18"/><path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></svg></button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <button class="new-btn">
+      <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+      add a new note
+    </button>
   </div>
+
+  <div class="table-card">
+    <table>
+      <thead>
+        <tr>
+          <th class="col-id">ID</th>
+          <th>Title</th>
+          <th class="col-content">Content</th>
+          <th class="col-date">Created At</th>
+          <th class="col-actions">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(note of userNotes; track $index){
+        <tr>
+          <td class="col-id">{{$index}}</td>
+          <td class="col-id">{{note.id}}</td>
+          <td class="col-title">{{note.title}}</td>
+          <td class="col-content">{{note.content}}</td>
+          <td class="col-date">{{note.createdAt}}<span class="rel">Il y a .....
+              semaines</span></td>
+          <td class="col-actions">
+            <button class="icon-btn danger"><svg viewBox="0 0 24 24"><path
+                  d="M3 6h18" /><path
+                  d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><path
+                  d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" /></svg></button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

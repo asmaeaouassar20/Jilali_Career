@@ -2,6 +2,7 @@ import { Component, contentChild, inject, OnInit } from '@angular/core';
 import { NoteModel } from '../../core/model/classes/Note.model';
 import { Router } from '@angular/router';
 import { AddNoteModal } from "../../components/add-note-modal/add-note-modal";
+import { StorageService } from '../../service/storage-service';
 
 
 @Component({
@@ -23,23 +24,13 @@ export class AddNote implements OnInit {
   ngOnInit() : void {
     this.loadAllNotes();
   }
+  constructor(private storageservice : StorageService){}
 
   loadAllNotes(){
-    const notes = localStorage.getItem('my-notes');
-    if(notes){
-      this.myNotes=JSON.parse(notes)
-    }else{
-      this.myNotes=this.factoryNotes();
-    }
+    this.myNotes = this.storageservice.getUserNotes();
   }
 
-  factoryNotes() : NoteModel[]{
-    const newNotes : NoteModel[] = [
-      {id:100 , title: "Asmae" , content:"I am beauriful and intelligent" , createdAt: new Date()},
-      {id:200 , title: "ALi" , content:"I am a vendor" , createdAt:new Date()}
-    ]
-    return newNotes
-  }
+
 
   openModalAddNote(){
     this.isModalAddNoteOpen=true;

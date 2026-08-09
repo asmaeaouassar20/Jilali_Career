@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-profile-view-modal',
@@ -8,4 +8,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ProfileViewModal {
   @Input() isOpen = false;
+  @Output() closeProfileModal = new EventEmitter<void>()
+  closeModal(){
+    this.closeProfileModal.emit();
+  }
 }

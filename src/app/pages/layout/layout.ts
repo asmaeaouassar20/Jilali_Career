@@ -28,6 +28,9 @@ export class Layout {
   recieveProfileDetailsViewOpenValue(isOpen : boolean){
     this.isProfileViewModalOpen=isOpen;
   }
+  handleCloseProfileModal(){
+    this.isProfileViewModalOpen=false;
+  }
   handleUserLogout(){
     // localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
     // this.router.navigate(["/home"]);

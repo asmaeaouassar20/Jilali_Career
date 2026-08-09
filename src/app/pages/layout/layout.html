@@ -13,7 +13,7 @@
   </aside>
 
   <main> 
-    <app-profile-view-modal [isOpen]="isProfileViewModalOpen" /> 
+    <app-profile-view-modal [isOpen]="isProfileViewModalOpen" (closeProfileModal)="handleCloseProfileModal()" /> 
     <router-outlet/>    
   </main>
 

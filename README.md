@@ -32,3 +32,17 @@ Plateforme de simulation d'entretiens techniques destinée aux développeurs web
 → Write down your thoughts, ideas, reminders, and personal notes to keep track of what matters to you.
 
 **Log Out**
+
+<br/><br/>
+<hr/>
+
+### Communication entre deux composants
+#### On utilise @Input pour la communication entre "Parent" et "Enfant" : du PARENT vers ENFANT
+- Le composant LayoutComponent contient sans doute le composant NavappjilaliComponent
+- Le LayoutComponent connaît l'utilisateur connecté et veut donner son nom à la barre de navigation NavappjilaliComponent pour l'afficher
+- Dans l'enfant (navappjilali.ts) :
+```
+export class Navappjilali {
+  @Input() loggedUser! : IUser; 
+}
+```

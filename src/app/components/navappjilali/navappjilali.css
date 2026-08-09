@@ -63,3 +63,9 @@
       color: var(--text-dim);
       padding: 14px 12px 8px;
   }
+
+  .loggedUser{
+    text-transform: lowercase;
+    margin: 0 10px;
+    font-weight: 100;
+  }

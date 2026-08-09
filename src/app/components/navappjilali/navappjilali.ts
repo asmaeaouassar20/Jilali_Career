@@ -18,9 +18,15 @@ export class Navappjilali {
   // Enfant(navbar) ->  Parent(Layout)
   // déclarer un événement personnalisé
   @Output() logout = new EventEmitter<void>();
+  isProfileDetailsViewOpen:boolean = false;
+  @Output() isProfileDetailsViewOpenEvent = new EventEmitter<boolean>();
 
   onLogoutClick(){
     // emettre l'événement vers le parent
     this.logout.emit();
+  }
+  toggleProfileDetailsView(){
+    this.isProfileDetailsViewOpen=!this.isProfileDetailsViewOpen;
+    this.isProfileDetailsViewOpenEvent.emit(this.isProfileDetailsViewOpen);
   }
 }

@@ -23,6 +23,7 @@ export class AddNote {
   closeModalAddNote(){
     this.isModalAddNoteOpen=false;
   }
+  
   onSaveUserNote(){
 
   }

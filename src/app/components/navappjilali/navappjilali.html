@@ -9,7 +9,7 @@
         Home
     </a>
 
-    <a class="nav-item">
+    <a class="nav-item" routerLink="/jilaliapp/dashboard">
         <!-- Dashboard -->
         <svg viewBox="0 0 24 24">
             <rect x="3" y="3" width="7" height="7" rx="1" />
@@ -95,7 +95,7 @@
 
     <div class="nav-label">Espace <span class="loggedUser">(asmae)</span></div>
 
-    <a class="nav-item">
+    <span class="nav-item" (click)="toggleProfileDetailsView()">
         <!-- Profile -->
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
             stroke-width="2"
@@ -104,7 +104,7 @@
             <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
         </svg>
         Profile
-    </a>
+    </span>
 
     <a class="nav-item">
         <!-- Paramètres -->

@@ -32,8 +32,8 @@ export class Layout {
     this.isProfileViewModalOpen=false;
   }
   handleUserLogout(){
-    // localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
-    // this.router.navigate(["/home"]);
+    localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
+    this.router.navigate(["/home"]);
     console.log("logout from layout")
   }
 }

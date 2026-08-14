@@ -1,0 +1,175 @@
+.container{    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.35;
+    z-index: 0;
+    animation: float 14s ease-in-out infinite;
+}
+
+.orb.a {
+    width: 340px;
+    height: 340px;
+    background: var(--indigo);
+    top: -110px;
+    left: -100px;
+}
+
+.orb.b {
+    width: 280px;
+    height: 280px;
+    background: var(--violet-glow);
+    bottom: -110px;
+    right: -90px;
+    animation-delay: -7s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    50% {
+        transform: translate(22px, -24px) scale(1.06);
+    }
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    animation: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Div 1 : titre ---------- */
+.title-block h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: #fff;
+}
+
+.title-block p {
+    font-size: 14px;
+    color: var(--text-soft);
+    margin-top: 10px;
+}
+
+/* ---------- Div 2 : boutons ---------- */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 22px;
+    border-radius: 11px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.btn svg {
+    width: 15px;
+    height: 15px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.9;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1.5px solid var(--border);
+    color: var(--text-soft);
+}
+
+.btn-secondary:hover {
+    border-color: var(--indigo-dark);
+    color: #fff;
+    background: rgba(99, 102, 241, 0.08);
+}
+
+.btn-primary {
+    border: none;
+    color: #fff;
+    background: linear-gradient(135deg, var(--indigo-light), var(--indigo-dark));
+    box-shadow: 0 10px 24px -8px rgba(99, 102, 241, 0.75);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 30px -8px rgba(99, 102, 241, 0.9);
+}
+
+.btn:active {
+    transform: translateY(0) scale(0.97);
+}
+
+/* ---------- Div 3 : lien login ---------- */
+.login-link {
+    font-size: 13.5px;
+    color: var(--text-dim);
+}
+
+.login-link a {
+    color: var(--indigo-light);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+    transition: color 0.18s ease;
+}
+
+.login-link a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media (max-width: 420px) {
+    .actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+

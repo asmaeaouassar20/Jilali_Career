@@ -28,6 +28,10 @@
   box-sizing: border-box;
 }
 
+a:hover , span:hover{
+  cursor: pointer;
+}
+
 body {
   /* min-height: 100vh; */
   /* display: flex;

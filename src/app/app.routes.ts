@@ -6,6 +6,7 @@ import { Dashboard } from './pages/dashboard/dashboard';
 import { AddNote } from './pages/add-note/add-note';
 import { Review } from './pages/review/review';
 import { CareerAdvice } from './pages/career-advice/career-advice';
+import { authGuard } from './guards/auth-guard';
 
 export const routes: Routes = [
     {
@@ -23,6 +24,7 @@ export const routes: Routes = [
     },
     {
         path: 'jilaliapp',
+        canActivate : [authGuard],
         component: Layout,
         children: [
             {

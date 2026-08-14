@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { NoteModel } from '../../core/model/classes/Note.model';
+import { NoteModel } from '../../core/model/classes/Note.model'
 
 @Component({
   selector: 'app-add-note-modal',

@@ -2,7 +2,8 @@ import { Component, contentChild, inject, OnInit } from '@angular/core';
 import { NoteModel } from '../../core/model/classes/Note.model';
 import { Router } from '@angular/router';
 import { AddNoteModal } from "../../components/add-note-modal/add-note-modal";
-import { StorageService } from '../../service/storage-service';
+import { StorageService } from '../../services/storage/storage-service';
+
 
 
 @Component({

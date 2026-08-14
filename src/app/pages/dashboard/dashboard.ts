@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { StorageService } from '../../service/storage-service';
 import { NoteModel } from '../../core/model/classes/Note.model';
+import { StorageService } from '../../services/storage/storage-service';
 
 @Component({
   selector: 'app-dashboard',

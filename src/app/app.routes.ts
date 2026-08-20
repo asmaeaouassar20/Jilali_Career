@@ -13,7 +13,7 @@ import { SuccessStories } from './pages/success-stories/success-stories';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: '/jilaliapp/dashboard',
         pathMatch: 'full'
     },
     {

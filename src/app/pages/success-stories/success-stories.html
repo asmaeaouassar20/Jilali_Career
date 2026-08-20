@@ -1,0 +1,12 @@
+<div class="container-cards">
+  @for (s of stories; track $index) {
+  <div class="card">
+    <div class="icon-circle">
+      <app-star />
+    </div>
+    <h3>{{s.title}}</h3>
+    <h6>{{s.idea}}</h6>
+    <p>{{s.content}}</p>
+  </div>
+  }
+</div>

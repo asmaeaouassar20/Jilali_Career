@@ -8,6 +8,7 @@ import { Review } from './pages/review/review';
 import { CareerAdvice } from './pages/career-advice/career-advice';
 import { authGuard } from './guards/auth-guard';
 import { CareerAdvice2 } from './pages/career-advice2/career-advice2';
+import { SuccessStories } from './pages/success-stories/success-stories';
 
 export const routes: Routes = [
     {
@@ -48,6 +49,10 @@ export const routes: Routes = [
                 path: 'career',
                 component: CareerAdvice
             },
+            {
+                path : 'success-stories',
+                component : SuccessStories
+            }
         ]
     }
 ];

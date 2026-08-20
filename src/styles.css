@@ -46,3 +46,24 @@ body {
   /* padding: 24px; */
   overflow: hidden;
 }
+
+
+/* login section */
+
+.login-link {
+    font-size: 13.5px;
+    color: var(--text-dim);
+}
+
+.login-link a {
+    color: var(--indigo-light);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+    transition: color 0.18s ease;
+}
+
+.login-link a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

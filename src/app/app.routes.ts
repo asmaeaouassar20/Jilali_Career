@@ -7,6 +7,7 @@ import { AddNote } from './pages/add-note/add-note';
 import { Review } from './pages/review/review';
 import { CareerAdvice } from './pages/career-advice/career-advice';
 import { authGuard } from './guards/auth-guard';
+import { CareerAdvice2 } from './pages/career-advice2/career-advice2';
 
 export const routes: Routes = [
     {
@@ -23,8 +24,12 @@ export const routes: Routes = [
         component: Login
     },
     {
+        path: 'career2',
+        component: CareerAdvice2
+    },
+    {
         path: 'jilaliapp',
-        canActivate : [authGuard],
+        canActivate: [authGuard],
         component: Layout,
         children: [
             {

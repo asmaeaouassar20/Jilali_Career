@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Global } from '../../core/constant/Global.constant';
+import { Global } from '../../constant/Global.constant';
+
 
 
 

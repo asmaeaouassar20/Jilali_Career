@@ -15,3 +15,4 @@
 - séparer vos composants entre : smart and dump components- voir nav => espace => nom user
 - my notes : problème affichage
 - bug : ajouter note -> fermer modal sans ajouter nte -> note added
+- fonctionnalité à implémenter : méthode pour calculer le temps passé dans dashboard : il y  a ....  ( getTimeAgo)

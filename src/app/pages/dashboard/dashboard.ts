@@ -21,4 +21,10 @@ export class Dashboard implements OnInit {
     this.userNotes = this.storageservice.getUserNotes();
   }
 
+
+  // TODO
+  getTimeAgo(){
+
+  }
+
 }

@@ -54,6 +54,20 @@
       position: relative;
   }
 
+  .app-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      color: var(--text-dim);
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 800;
+      transition: background 0.18s ease, color 0.18s ease;
+      position: relative;
+  }
+
 
   .nav-label {
       font-size: 11px;
@@ -64,8 +78,8 @@
       padding: 14px 12px 8px;
   }
 
-  .loggedUser{
-    text-transform: uppercase;
-    margin: 0 10px;
-    font-weight: 100;
+  .loggedUser {
+      text-transform: uppercase;
+      margin: 0 10px;
+      font-weight: 100;
   }

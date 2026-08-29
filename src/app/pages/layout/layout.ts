@@ -4,6 +4,7 @@ import { Global } from '../../core/constant/Global.constant';
 import { Router, RouterOutlet } from '@angular/router';
 import { Navappjilali } from "../../components/navappjilali/navappjilali";
 import { ProfileViewModal } from "../../components/profile-view-modal/profile-view-modal";
+import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
 
 @Component({
   selector: 'app-layout',
@@ -12,18 +13,16 @@ import { ProfileViewModal } from "../../components/profile-view-modal/profile-vi
   styleUrl: './layout.css',
 })
 export class Layout {
-  loggedUser! : IUser;
+  loggedUser! : IUser |null;
   router = inject(Router);
+  currentUserService = inject(CurrentUserService);
 
   // if user want to see his profile details
   isProfileViewModalOpen : boolean =false;
 
 
   constructor(){
-    const localUser = localStorage.getItem(Global.LOGIN_LOCAL_KEY);
-    if(localUser != null){
-      this.loggedUser = JSON.parse(localUser);
-    }
+    this.loggedUser = this.currentUserService.getCurrentUser();  
   }
   recieveProfileDetailsViewOpenValue(isOpen : boolean){
     this.isProfileViewModalOpen=isOpen;

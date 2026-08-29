@@ -15,3 +15,6 @@
 - bug : ajouter note -> fermer modal sans ajouter nte -> note added
 - fonctionnalité à implémenter : méthode pour calculer le temps passé dans dashboard : il y  a ....  ( getTimeAgo)
 - add note : si les inpust sont invalides on doit afficher un msg erreur au user pour améliorer UX
+- Dashboard need to be enhanced : for example: add new note btn ...
+- dans onglet review : le niveau de difficulté doit être coloré
+- 

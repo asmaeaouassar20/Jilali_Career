@@ -17,4 +17,5 @@
 - add note : si les inpust sont invalides on doit afficher un msg erreur au user pour améliorer UX
 - Dashboard need to be enhanced : for example: add new note btn ...
 - dans onglet review : le niveau de difficulté doit être coloré
-- 
+- TODO : getAvatarLetters  in layout.ts qui retourne les premiers lettres du nom
+- infos in Profile : implement update profile

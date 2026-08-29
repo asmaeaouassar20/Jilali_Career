@@ -35,4 +35,9 @@ export class Layout {
     this.router.navigate(["/home"]);
     console.log("logout from layout")
   }
+
+  // TODO
+  getAvatarLetters(){
+
+  }
 }

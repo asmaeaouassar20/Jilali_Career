@@ -14,11 +14,7 @@ import { Practice } from './pages/practice/practice';
 
 
 export const routes: Routes = [
-    {
-        path: '',
-        redirectTo: '/jilaliapp/dashboard',
-        pathMatch: 'full'
-    },
+
     {
         path: 'home',
         component: Home
@@ -53,16 +49,22 @@ export const routes: Routes = [
                 component: CareerAdvice
             },
             {
-                path : 'success-stories',
-                component : SuccessStories
+                path: 'success-stories',
+                component: SuccessStories
             },
             {
-                path : 'settings',
-                component : Settings
-            },{
-                path : "practice",
-                component : Practice
+                path: 'settings',
+                component: Settings
+            }, 
+            {
+                path: "practice",
+                component: Practice
             }
         ]
+    },
+    {
+        path: '**',
+        redirectTo: 'home',
+        pathMatch: 'full'
     }
 ];

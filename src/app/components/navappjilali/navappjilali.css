@@ -65,7 +65,7 @@
   }
 
   .loggedUser{
-    text-transform: lowercase;
+    text-transform: uppercase;
     margin: 0 10px;
     font-weight: 100;
   }

@@ -1,6 +1,7 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Input, OnInit, Output } from '@angular/core';
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { IUser } from '../../core/model/interfaces/User.model';
+import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
 
 @Component({
   selector: 'app-navappjilali',
@@ -8,7 +9,9 @@ import { IUser } from '../../core/model/interfaces/User.model';
   templateUrl: './navappjilali.html',
   styleUrl: './navappjilali.css',
 })
-export class Navappjilali {
+export class Navappjilali implements OnInit {
+  private currentUserService = inject(CurrentUserService);
+
   @Input() loggedUser! : IUser; // Il déclare qu'il accepte de recevoir une donnée "loggedUser" depuis son parent
 
   // Syntaxe moderne avec Signals (Angular 17+) :
@@ -20,6 +23,13 @@ export class Navappjilali {
   @Output() logout = new EventEmitter<void>();
   isProfileDetailsViewOpen:boolean = false;
   @Output() isProfileDetailsViewOpenEvent = new EventEmitter<boolean>();
+
+
+  currentUser! : IUser | null;
+
+  ngOnInit(): void {
+    this.currentUser=this.currentUserService.getCurrentUser();
+  }
 
   onLogoutClick(){
     // emettre l'événement vers le parent

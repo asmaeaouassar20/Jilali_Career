@@ -1,6 +1,6 @@
 
 
-- get current user
+
 - ajouter : open/add sidebar
 - ajouter : light/dark mode
 - interface user (à revoir)
@@ -13,7 +13,6 @@
 - add : createdAt and delete btn in AddNote Compoenent
 - utilisez Validators dans add new note
 - regler l'affichage des notes dans le dashboard
-- séparer vos composants entre : smart and dump components
-- voir nav => espace => nom user
+- séparer vos composants entre : smart and dump components- voir nav => espace => nom user
 - my notes : problème affichage
 - bug : ajouter note -> fermer modal sans ajouter nte -> note added

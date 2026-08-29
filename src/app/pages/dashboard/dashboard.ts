@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { NoteModel } from '../../core/model/classes/Note.model';
 import { StorageService } from '../../core/services/storage/storage-service';
+import { DatePipe } from '@angular/common';
 
 
 @Component({
   selector: 'app-dashboard',
-  imports: [],
+  imports: [DatePipe],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

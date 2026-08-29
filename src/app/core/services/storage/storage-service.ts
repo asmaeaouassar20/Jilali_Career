@@ -17,9 +17,9 @@ export class StorageService {
 
   factoryNotes(): NoteModel[] {
     const newNotes: NoteModel[] = [
-      { id: 100, title: "Asmae Title", content: "I am a serious person who really enjoys learning and taking on challenges.", createdAt: new Date() },
-      { id: 200, title: "Jilali Title", content: "He is an engineer I met online, and I would love to be as talented as he is.", createdAt: new Date() }
-    ]
+      { id: 100, title: "Prepare Your Self-Introduction", content: "Prepare a 2-minute introduction covering your background, key skills, professional experience, and career goals.", createdAt: new Date() },
+      { id: 200, title: "Common Interview Questions", content: "Prepare answers for common questions such as: Tell me about yourself, What are your strengths and weaknesses?, Why do you want to join our company?, and Where do you see yourself in five years?", createdAt: new Date() }
+     ]
     return newNotes
   }
 }

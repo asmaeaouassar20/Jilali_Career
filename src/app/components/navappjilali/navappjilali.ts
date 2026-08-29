@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink, RouterLinkActive } from "@angular/router";
 import { IUser } from '../../core/model/interfaces/User.model';
 
 @Component({
   selector: 'app-navappjilali',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './navappjilali.html',
   styleUrl: './navappjilali.css',
 })

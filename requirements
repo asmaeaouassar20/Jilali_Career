@@ -14,9 +14,9 @@
 - hundle unknown path
 - accès à dashboard sans login
 - use modal to add new note
-- "active" link in navbar
 - add : createdAt and delete btn in AddNote Compoenent
 - utilisez Validators dans add new note
 - regler l'affichage des notes dans le dashboard
 - séparer vos composants entre : smart and dump components
-- bug in : /jilaliapp/career
+- voir nav => espace => nom user
+- my notes : problème affichage

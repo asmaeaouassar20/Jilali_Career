@@ -3,7 +3,6 @@
 
 - ajouter : open/add sidebar
 - ajouter : light/dark mode
-- add logout button
 - english ? 
 - traduction ?
 - problème dans : responsive design
@@ -13,6 +12,6 @@
 - utilisez Validators dans add new note
 - regler l'affichage des notes dans le dashboard
 - séparer vos composants entre : smart and dump components- voir nav => espace => nom user
-- my notes : problème affichage
 - bug : ajouter note -> fermer modal sans ajouter nte -> note added
 - fonctionnalité à implémenter : méthode pour calculer le temps passé dans dashboard : il y  a ....  ( getTimeAgo)
+- add note : si les inpust sont invalides on doit afficher un msg erreur au user pour améliorer UX

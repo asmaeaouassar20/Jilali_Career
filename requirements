@@ -3,12 +3,11 @@
 
 - ajouter : open/add sidebar
 - ajouter : light/dark mode
-- interface user (à revoir)
 - add logout button
 - english ? 
 - traduction ?
+- problème dans : responsive design
 - hundle unknown path
-- accès à dashboard sans login
 - use modal to add new note
 - add : createdAt and delete btn in AddNote Compoenent
 - utilisez Validators dans add new note

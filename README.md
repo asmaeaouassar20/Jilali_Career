@@ -6,7 +6,7 @@
 Plateforme de simulation d'entretiens techniques destinée aux développeurs web, avec des questions conçues pour tester leurs connaissances, leur logique et leur capacité à raisonner. Elle propose également des conseils de carrière inspirés d'expériences concrètes dans le domaine de la tech, afin d'aider les développeurs à mieux préparer leurs entretiens, faire leurs choix professionnels et construire progressivement leur carrière.
 <hr/>
 
-# Menu
+## Menu
 **Home**
 → Introduce the app and explain how it works
 
@@ -35,6 +35,9 @@ Plateforme de simulation d'entretiens techniques destinée aux développeurs web
 
 <br/><br/>
 <hr/>
+
+<br/><br/><br/><br/>
+## Learn with algsotyle 🩶
 
 ### Communication entre deux composants
 #### (1) On utilise @Input pour la communication entre "Parent" et "Enfant" : du PARENT vers ENFANT

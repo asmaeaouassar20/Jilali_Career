@@ -1,6 +1,6 @@
 
 
-
+- get current user
 - ajouter : open/add sidebar
 - ajouter : light/dark mode
 - interface user (à revoir)
@@ -16,3 +16,4 @@
 - séparer vos composants entre : smart and dump components
 - voir nav => espace => nom user
 - my notes : problème affichage
+- bug : ajouter note -> fermer modal sans ajouter nte -> note added

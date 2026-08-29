@@ -9,6 +9,8 @@ import { CareerAdvice } from './pages/career-advice/career-advice';
 import { authGuard } from './guards/auth-guard';
 import { CareerAdvice2 } from './pages/career-advice2/career-advice2';
 import { SuccessStories } from './pages/success-stories/success-stories';
+import { Settings } from './pages/settings/settings';
+
 
 export const routes: Routes = [
     {
@@ -52,6 +54,10 @@ export const routes: Routes = [
             {
                 path : 'success-stories',
                 component : SuccessStories
+            },
+            {
+                path : 'settings',
+                component : Settings
             }
         ]
     }

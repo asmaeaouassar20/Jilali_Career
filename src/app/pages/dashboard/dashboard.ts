@@ -21,6 +21,9 @@ export class Dashboard implements OnInit {
     this.userNotes = this.storageservice.getUserNotes();
   }
 
+  deleteNote(IndexNote:number){
+    this.userNotes=this.storageservice.deleteNote(IndexNote);
+  }
 
   // TODO
   getTimeAgo(){

@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { NoteModel } from '../../model/classes/Note.model';
+import { Global } from '../../constant/Global.constant';
 
 
 
@@ -7,8 +8,9 @@ import { NoteModel } from '../../model/classes/Note.model';
   providedIn: 'root',
 })
 export class StorageService {
-  getUserNotes() {
-    const notes = localStorage.getItem('my-notes');
+
+  getUserNotes() : NoteModel[] {
+    const notes = localStorage.getItem(Global.NOTES_LOCAL_KEY);
     if (notes) {
       return JSON.parse(notes);
     }
@@ -21,6 +23,13 @@ export class StorageService {
       { id: 200, title: "Common Interview Questions", content: "Prepare answers for common questions such as: Tell me about yourself, What are your strengths and weaknesses?, Why do you want to join our company?, and Where do you see yourself in five years?", createdAt: new Date() }
      ]
     return newNotes
+  }
+
+  deleteNote(indexNote : number) : NoteModel[]{
+    const notes = this.getUserNotes();
+    notes.splice(indexNote,1);
+    localStorage.setItem(Global.NOTES_LOCAL_KEY, JSON.stringify(notes));
+    return notes;
   }
 }
 

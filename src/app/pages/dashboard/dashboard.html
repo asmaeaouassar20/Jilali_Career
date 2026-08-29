@@ -33,7 +33,7 @@
           <td class="col-content">{{note.content}}</td>
           <td class="col-date">{{note.createdAt | date }}<span class="rel">Il y a ......</span></td>
           <td class="col-actions">
-            <button class="icon-btn danger"><svg viewBox="0 0 24 24"><path
+            <button class="icon-btn danger" (click)="deleteNote($index)"><svg viewBox="0 0 24 24"><path
                   d="M3 6h18" /><path
                   d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><path
                   d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" /></svg></button>

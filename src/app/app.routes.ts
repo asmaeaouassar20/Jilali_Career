@@ -10,6 +10,7 @@ import { authGuard } from './guards/auth-guard';
 import { CareerAdvice2 } from './pages/career-advice2/career-advice2';
 import { SuccessStories } from './pages/success-stories/success-stories';
 import { Settings } from './pages/settings/settings';
+import { Practice } from './pages/practice/practice';
 
 
 export const routes: Routes = [
@@ -58,6 +59,9 @@ export const routes: Routes = [
             {
                 path : 'settings',
                 component : Settings
+            },{
+                path : "practice",
+                component : Practice
             }
         ]
     }

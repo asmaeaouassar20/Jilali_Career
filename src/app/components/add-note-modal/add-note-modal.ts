@@ -27,6 +27,9 @@ export class AddNoteModal {
   }
 
   addNewNote(){
-    this.newNoteValues.emit(this.form.value)
+    // Vérification du formulaire 
+    if (this.form.valid) { 
+      this.newNoteValues.emit(this.form.value)  
+    }  
   }
 }

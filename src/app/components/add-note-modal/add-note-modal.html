@@ -8,8 +8,8 @@
    
     <div class="modal-body">
         <p>Write your thoyghts here</p>
-        <input class="input-title" placeholder="add title" />
-        <textarea placeholder="Write your note..."></textarea>
+        <input class="input-title" placeholder="add title" formControlName="title" />
+        <textarea placeholder="Write your note..." formControlName="content"></textarea>
     </div>
     <div class="modal-footer">
         <button class="cancel-btn" (click)="closeModal()">Cancel</button>

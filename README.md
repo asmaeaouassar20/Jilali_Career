@@ -5,6 +5,9 @@
 <hr/>
 Plateforme de simulation d'entretiens techniques destinée aux développeurs web, avec des questions conçues pour tester leurs connaissances, leur logique et leur capacité à raisonner. Elle propose également des conseils de carrière inspirés d'expériences concrètes dans le domaine de la tech, afin d'aider les développeurs à mieux préparer leurs entretiens, faire leurs choix professionnels et construire progressivement leur carrière.
 <hr/>
+<p align="center">
+<img width="450" height="450" alt="logo" src="https://github.com/user-attachments/assets/b35abe9e-258c-41e5-ab12-4793bad9d83e" />
+</p>
 
 ## Menu
 **Home**

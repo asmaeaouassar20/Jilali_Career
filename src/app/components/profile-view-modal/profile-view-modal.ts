@@ -26,6 +26,6 @@ export class ProfileViewModal implements OnInit {
   }
   updateProfile(){
     this.router.navigateByUrl("/jilaliapp/update-profile");
-    this.closeModal();
+    this.closeModal();    
   }
 }

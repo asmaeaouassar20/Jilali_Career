@@ -4,6 +4,8 @@ import { TranslateService } from '@ngx-translate/core';
 import { StorageService } from './core/services/storage/storage-service';
 import { MenuBurgerSVG } from "./svg/menu-burger/menu-burger-svg/menu-burger-svg";
 import { CloseBtn } from "./svg/close-btn/close-btn/close-btn";
+import { Global } from './core/constant/Global.constant';
+import { ThemeService } from './core/services/theme/theme-service';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +18,8 @@ export class App {
 
   private translate = inject(TranslateService); 
   private storageService = inject(StorageService); 
-  currentLanguage : 'fr'| 'en' = 'en';
+  private themeService = inject(ThemeService);
+  currentLanguage : 'fr'| 'en' = 'en';  
 
   constructor(){
     this.translate.use(this.storageService.getLanguageTranslate());
@@ -41,5 +44,13 @@ export class App {
     this.storageService.setLanguageTranslate(this.currentLanguage);   
     this.translate.use(this.currentLanguage);  
   }
+
+  changeTheme(){
+    const currentTheme = this.themeService.getCurrentTheme();
+    if(currentTheme == "indigo") this.themeService.setTheme("pink");
+    if(currentTheme == "pink") this.themeService.setTheme("green");
+    if(currentTheme == "green") this.themeService.setTheme("indigo");
+  }
+ 
  
 }

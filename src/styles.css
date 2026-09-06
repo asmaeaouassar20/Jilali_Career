@@ -1,26 +1,105 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
+  /* Thème par défaut : indigo */
   --bg: #0B0F1E;
+  --bg1: rgba(99, 102, 241, 0.16);
+  --bg2: rgba(124, 127, 255, 0.14);
   --bg-deep: #060810;
+
   --surface: #12172B;
   --surface-2: #171D35;
+
   --indigo: #6366F1;
   --indigo-light: #8B8FF7;
   --indigo-dark: #4548C9;
   --violet-glow: #7C7FFF;
+
   --green: #34D399;
   --green-light: #6EE7B7;
   --green-dark: #059669;
   --green-glow: #4ADE80;
+
   --text: #EDEEF7;
   --text-soft: #9295B3;
+  --text-dim: #565C7C;
+
   --border: #262C48;
   --bordergreen: #262C48;
+
+  --danger: #F16A6A;
+
   --radius: 18px;
   --radius-table: 8px;
-  --danger: #F16A6A;
-  --text-dim: #565C7C;
 }
+
+
+/* =========================
+   THÈME VERT
+   ========================= */
+
+[data-theme="green"] {
+  --bg: #0A140F;
+  --bg1: rgba(16, 185, 129, 0.16);
+  --bg2: rgba(110, 231, 183, 0.14);
+  --bg-deep: #060D09;
+
+  --surface: #0F1F17;
+  --surface-2: #14291D;
+
+  --indigo: #10B981;
+  --indigo-light: #34D399;
+  --indigo-dark: #047857;
+  --violet-glow: #6EE7B7;
+
+  --green: #34D399;
+  --green-light: #6EE7B7;
+  --green-dark: #059669;
+  --green-glow: #4ADE80;
+
+  --text: #EAF6EF;
+  --text-soft: #8FAE9D;
+  --text-dim: #4E6E5B;
+
+  --border: #1F3A2A;
+  --bordergreen: #1F3A2A;
+
+  --danger: #F16A6A;
+}
+
+
+/* =========================
+   THÈME ROSE
+   ========================= */
+
+[data-theme="pink"] {
+  --bg: #170B14;
+  --bg1: rgba(236, 72, 153, 0.16);
+  --bg2: rgba(249, 168, 212, 0.14);
+  --bg-deep: #0D060B;
+
+  --surface: #21121C;
+  --surface-2: #2B1725;
+
+  --indigo: #EC4899;
+  --indigo-light: #F472B6;
+  --indigo-dark: #BE185D;
+  --violet-glow: #F9A8D4;
+
+  --green: #34D399;
+  --green-light: #6EE7B7;
+  --green-dark: #059669;
+  --green-glow: #4ADE80;
+
+  --text: #F8EEF4;
+  --text-soft: #B394A6;
+  --text-dim: #6E4A5A;
+
+  --border: #3A2030;
+  --bordergreen: #3A2030;
+
+  --danger: #F16A6A;
+}
+
 
 * {
   margin: 0;
@@ -38,8 +117,8 @@ body {
     align-items: center;
     justify-content: center; */
   background:
-    radial-gradient(700px circle at 20% 20%, rgba(99, 102, 241, 0.16), transparent 60%),
-    radial-gradient(700px circle at 80% 85%, rgba(124, 127, 255, 0.14), transparent 60%),
+    radial-gradient(700px circle at 20% 20%, var(--bg1), transparent 60%),
+    radial-gradient(700px circle at 80% 85%, var(--bg2), transparent 60%),
     var(--bg);
   font-family: 'Inter', sans-serif;
   color: var(--text);

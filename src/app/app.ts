@@ -9,4 +9,25 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('Jilali');
+
+  currentLanguage : 'fr'| 'en' = 'fr';
+
+  get currentFlag() : string{
+    return this.currentLanguage === 'fr' 
+      ? 'fr.png'
+      : 'en.png';
+  }
+  get otherFlag() : string {
+    return this.currentLanguage === 'fr'
+      ? 'en.png'
+      : 'fr.png';
+  }
+
+  toggleLanguage(){
+    this.currentLanguage = 
+      this.currentLanguage === 'fr' 
+        ? 'en' 
+        : 'fr';
+  }
+ 
 }

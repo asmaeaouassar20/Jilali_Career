@@ -10,3 +10,28 @@
 #themeicone:hover{
     transform: rotate(45deg);
 }
+
+.flag-container{
+    position: absolute;
+    bottom: 120px;
+    right: 30px;
+    z-index: 1000;
+    width: 130px;
+    cursor: pointer;
+    transition: transform 0.3s ease ;
+    img{
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.flag-container .flag2{
+    transform: translateX(-65px);
+    opacity: 0;
+    transition: opacity 0.3s ease ; 
+}
+.flag-container:hover .flag2{
+    opacity: 1;
+}

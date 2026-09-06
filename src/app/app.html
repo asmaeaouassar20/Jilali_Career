@@ -1,3 +1,6 @@
 <router-outlet />
 <img id="themeicone" src="theme.png" alt="change theme" title="change theme" />
-
+<div class="flag-container" >
+    <img class="flag1" [src]="currentFlag" alt="current Language"  />
+    <img class="flag2" [src]="otherFlag" alt="flag2" (click)="toggleLanguage()" />
+</div>

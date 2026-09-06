@@ -7,10 +7,11 @@ import { ProfileViewModal } from "../../components/profile-view-modal/profile-vi
 import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
 import { MenuBurgerSVG } from "../../svg/menu-burger/menu-burger-svg/menu-burger-svg";
 import { NgIf } from '@angular/common';
+import { CloseBtn } from "../../svg/close-btn/close-btn/close-btn";
 
 @Component({
   selector: 'app-layout',
-  imports: [Navappjilali, RouterOutlet, ProfileViewModal, MenuBurgerSVG],
+  imports: [Navappjilali, RouterOutlet, ProfileViewModal, MenuBurgerSVG, CloseBtn],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
 })
@@ -45,6 +46,9 @@ export class Layout {
 
   openSideBarMenu(){
     this.isSidebarOpen=true;
+  }
+  closeSideBar(){
+    this.isSidebarOpen=false;
   }
  
 }

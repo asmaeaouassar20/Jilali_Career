@@ -2,10 +2,11 @@ import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { StorageService } from './core/services/storage/storage-service';
+import { MenuBurgerSVG } from "./svg/menu-burger/menu-burger-svg/menu-burger-svg";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MenuBurgerSVG],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

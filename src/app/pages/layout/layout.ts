@@ -5,10 +5,11 @@ import { Router, RouterOutlet } from '@angular/router';
 import { Navappjilali } from "../../components/navappjilali/navappjilali";
 import { ProfileViewModal } from "../../components/profile-view-modal/profile-view-modal";
 import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
+import { MenuBurgerSVG } from "../../svg/menu-burger/menu-burger-svg/menu-burger-svg";
 
 @Component({
   selector: 'app-layout',
-  imports: [Navappjilali, RouterOutlet, ProfileViewModal],
+  imports: [Navappjilali, RouterOutlet, ProfileViewModal, MenuBurgerSVG],
   templateUrl: './layout.html',
   styleUrl: './layout.css',
 })
@@ -18,7 +19,7 @@ export class Layout {
   currentUserService = inject(CurrentUserService);
 
   // if user want to see his profile details
-  isProfileViewModalOpen : boolean =false;
+  isProfileViewModalOpen : boolean =false; 
 
 
   constructor(){
@@ -31,9 +32,7 @@ export class Layout {
     this.isProfileViewModalOpen=false;
   }
   handleUserLogout(){
-    localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
-    this.router.navigate(["/home"]);
-    console.log("logout from layout")
+    this.currentUserService.logout();  
   }
 
   // TODO

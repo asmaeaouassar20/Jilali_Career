@@ -28,4 +28,7 @@ export class ProfileViewModal implements OnInit {
     this.router.navigateByUrl("/jilaliapp/update-profile");
     this.closeModal();    
   }
+  logout(){
+    this.connectedUserService.logout();
+  }
 }

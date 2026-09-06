@@ -2,6 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { IUser } from '../../model/interfaces/User.model';
 import { AuthService } from '../auth/auth-service';
 import { Global } from '../../constant/Global.constant';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -9,6 +10,7 @@ import { Global } from '../../constant/Global.constant';
 export class CurrentUserService {
   
   private authService = inject(AuthService);
+  private router = inject(Router);
 
   getCurrentUser() : IUser | null{
     if(this.authService.isAuthenticated()){
@@ -18,5 +20,10 @@ export class CurrentUserService {
         }
     }  
     return null;
+  }
+
+  logout(){
+      localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
+      this.router.navigate(["/home"]);  
   }
 }

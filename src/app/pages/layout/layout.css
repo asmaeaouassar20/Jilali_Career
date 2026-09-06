@@ -1,6 +1,6 @@
 .container-layout{
   display: flex;  
-}
+} 
 
   /* ---------- Sidebar ---------- */
   .sidebar {
@@ -72,9 +72,8 @@
 
 
 
-
-
-  @media (max-width: 900px) {
-    .sidebar { display: none; }
-    
+  @media (max-width = 970px) {
+    .sidebar{
+      display: none;
+    }
   }

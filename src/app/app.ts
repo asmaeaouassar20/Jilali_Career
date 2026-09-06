@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,12 @@ import { RouterOutlet } from '@angular/router';
 export class App {
   protected readonly title = signal('Jilali');
 
+  private translate = inject(TranslateService);  
   currentLanguage : 'fr'| 'en' = 'fr';
+
+  constructor(){
+    this.translate.use('fr');
+  }
 
   get currentFlag() : string{
     return this.currentLanguage === 'fr' 

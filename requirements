@@ -1,7 +1,6 @@
 - ajouter : open/add sidebar
 - ajouter : light/dark mode
 - problème dans : responsive design
-- hundle unknown path
 - use modal to add new note
 - add : createdAt and delete btn in AddNote Compoenent
 - utilisez Validators dans add new note
@@ -15,4 +14,5 @@
 - TODO : getAvatarLetters  in layout.ts qui retourne les premiers lettres du nom
 - infos in Profile : implement update profile
 - ajouter "active" sur la route "Profile" lorsqu'elle est active
-- le lien "logout" dans profile
+- la traduction de la page "HOME" est terminée , il nous reste les autres pages => on suit la même méthode 
+- TODO functions

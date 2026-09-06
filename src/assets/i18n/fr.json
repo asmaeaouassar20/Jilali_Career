@@ -1,5 +1,10 @@
 {
-    "HOME" : {
-        "TITLE" : "Défi et conseils de carrière de Jilali"
+    "HOME": {
+        "TITLE": "Défi et conseils de carrière de Jilali",
+        "SUB-TITLE": "Perfectionnez vos compétences, relevez des défis quotidiens et bénéficiez de conseils pour faire évoluer votre carrière de développeur.",
+        "CareerAdvice": "Conseils de carrière",
+        "StartChallenge": "Commencer le défi",
+        "LogIn": "Se connecter",
+        "DESC": " pour accéder à plus de fonctionnalités "
     }
 }

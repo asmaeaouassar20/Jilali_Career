@@ -1,5 +1,10 @@
 {
     "HOME" : {
-        "TITLE" : "Jilali Career Challenge and Advices"
+        "TITLE" : "Jilali Career Challenge and Advices",
+        "SUB-TITLE" : "Sharpen your skills, take on daily challenges, and get guidance to grow your developer career.",
+        "CareerAdvice" : "Career Advice",
+        "StartChallenge" : "Start Challenge",
+        "LogIn" : "Log in",
+        "DESC" : " to access more features "
     }    
 }

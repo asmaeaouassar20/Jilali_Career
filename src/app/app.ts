@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { StorageService } from './core/services/storage/storage-service';
 import { MenuBurgerSVG } from "./svg/menu-burger/menu-burger-svg/menu-burger-svg";
+import { CloseBtn } from "./svg/close-btn/close-btn/close-btn";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuBurgerSVG],
+  imports: [RouterOutlet, MenuBurgerSVG, CloseBtn],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

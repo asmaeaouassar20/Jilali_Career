@@ -6,6 +6,7 @@ import { Navappjilali } from "../../components/navappjilali/navappjilali";
 import { ProfileViewModal } from "../../components/profile-view-modal/profile-view-modal";
 import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
 import { MenuBurgerSVG } from "../../svg/menu-burger/menu-burger-svg/menu-burger-svg";
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-layout',
@@ -17,6 +18,7 @@ export class Layout {
   loggedUser! : IUser |null;
   router = inject(Router);
   currentUserService = inject(CurrentUserService);
+  isSidebarOpen:boolean = false;
 
   // if user want to see his profile details
   isProfileViewModalOpen : boolean =false; 
@@ -39,4 +41,10 @@ export class Layout {
   getAvatarLetters(){
 
   }
+
+
+  openSideBarMenu(){
+    this.isSidebarOpen=true;
+  }
+ 
 }

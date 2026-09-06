@@ -1,8 +1,12 @@
 
 <div class="container-layout">
-  <app-menu-burger-svg />
-  <aside class="sidebar">    
-    <app-navappjilali (logout)="handleUserLogout()" (isProfileDetailsViewOpenEvent)="recieveProfileDetailsViewOpenValue($event)" />
+ @if(!isSidebarOpen){
+   <span (click)="openSideBarMenu()"
+    class="menu-burger" ><app-menu-burger-svg /></span>
+ }
+  <aside class="sidebar">
+    <app-navappjilali (logout)="handleUserLogout()"
+      (isProfileDetailsViewOpenEvent)="recieveProfileDetailsViewOpenValue($event)" />
 
     <div class="sidebar-foot">
       <div class="avatar">JA</div>
@@ -12,10 +16,25 @@
       </div>
     </div>
   </aside>
+  @if(isSidebarOpen){
+  <aside class="sidebar-mini">
+    <app-navappjilali (logout)="handleUserLogout()"
+      (isProfileDetailsViewOpenEvent)="recieveProfileDetailsViewOpenValue($event)" />
 
-  <main> 
-    <app-profile-view-modal [isOpen]="isProfileViewModalOpen" (closeProfileModal)="handleCloseProfileModal()" /> 
-    <router-outlet/>    
+    <div class="sidebar-foot">
+      <div class="avatar">JA</div>
+      <div class="who">
+        <strong>{{loggedUser?.name}}</strong>
+        <small>{{loggedUser?.email}}</small>
+      </div>
+    </div>
+  </aside>
+  }
+
+  <main>
+    <app-profile-view-modal [isOpen]="isProfileViewModalOpen"
+      (closeProfileModal)="handleCloseProfileModal()" />
+    <router-outlet />
   </main>
 
 </div>

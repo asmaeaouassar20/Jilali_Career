@@ -1,6 +1,7 @@
 import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { StorageService } from './core/services/storage/storage-service';
 
 @Component({
   selector: 'app-root',
@@ -11,13 +12,14 @@ import { TranslateService } from '@ngx-translate/core';
 export class App {
   protected readonly title = signal('Jilali');
 
-  private translate = inject(TranslateService);  
-  currentLanguage : 'fr'| 'en' = 'fr';
+  private translate = inject(TranslateService); 
+  private storageService = inject(StorageService); 
+  currentLanguage : 'fr'| 'en' = 'en';
 
   constructor(){
-    this.translate.use('fr');
+    this.translate.use(this.storageService.getLanguageTranslate());
   }
-
+ 
   get currentFlag() : string{
     return this.currentLanguage === 'fr' 
       ? 'fr.png'
@@ -33,7 +35,9 @@ export class App {
     this.currentLanguage = 
       this.currentLanguage === 'fr' 
         ? 'en' 
-        : 'fr';
+        : 'fr';    
+    this.storageService.setLanguageTranslate(this.currentLanguage);   
+    this.translate.use(this.currentLanguage);  
   }
  
 }

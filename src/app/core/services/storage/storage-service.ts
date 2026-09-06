@@ -31,6 +31,15 @@ export class StorageService {
     localStorage.setItem(Global.NOTES_LOCAL_KEY, JSON.stringify(notes));
     return notes;
   }
+
+  setLanguageTranslate(language : string){
+    localStorage.setItem('language',language);
+  }
+  getLanguageTranslate() : string{
+    const lang = localStorage.getItem('language');
+    if(lang==null) return 'en';
+    return lang;
+  }
 }
 
 

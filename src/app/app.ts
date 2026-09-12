@@ -20,9 +20,14 @@ export class App {
   private storageService = inject(StorageService); 
   private themeService = inject(ThemeService);
   currentLanguage : 'fr'| 'en' = 'en';  
+  isLightThemApplied=false;
 
-  constructor(){
+  constructor(){    
     this.translate.use(this.storageService.getLanguageTranslate());
+
+    const currentTheme = this.themeService.getCurrentTheme();
+    if(this.themeService.getCurrentTheme()=="light") this.isLightThemApplied=true;
+    this.themeService.setTheme(currentTheme)
   }
  
   get currentFlag() : string{
@@ -46,11 +51,24 @@ export class App {
   }
 
   changeTheme(){
-    const currentTheme = this.themeService.getCurrentTheme();
+    const currentTheme = this.themeService.getCurrentTheme();    
     if(currentTheme == "indigo") this.themeService.setTheme("pink");
-    if(currentTheme == "pink") this.themeService.setTheme("green");
-    if(currentTheme == "green") this.themeService.setTheme("indigo");
+    else if(currentTheme == "pink") this.themeService.setTheme("green");
+    else if(currentTheme == "green") this.themeService.setTheme("indigo");
+    else this.themeService.setTheme("indigo");
   }
+
+  setLightTheme(){
+    const currentTheme = this.themeService.getCurrentTheme();
+    if(currentTheme!="light") {
+      this.themeService.setTheme("light");
+      this.isLightThemApplied=true;
+    } else {
+      this.themeService.setTheme("indigo");
+      this.isLightThemApplied=false;
+    }
+  }
+ 
  
  
 }

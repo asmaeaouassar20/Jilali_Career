@@ -1,5 +1,3 @@
-- ajouter : open/add sidebar
-- ajouter : light/dark mode
 - problème dans : responsive design
 - use modal to add new note
 - add : createdAt and delete btn in AddNote Compoenent

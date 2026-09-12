@@ -98,6 +98,37 @@
   --bordergreen: #3A2030;
 
   --danger: #F16A6A;
+} 
+
+
+/* Thème LIGHT  */
+[data-theme="light"] {
+  --bg: #FFFFFF;
+  --bg1: rgba(99, 102, 241, 0.06);
+  --bg2: rgba(124, 127, 255, 0.05);
+  --bg-deep: #F4F5F9;
+
+  --surface: #FFFFFF;
+  --surface-2: #F7F7FB;
+
+  --indigo: #6366F1;
+  --indigo-light: #818CF8;
+  --indigo-dark: #4548C9;
+  --violet-glow: #7C7FFF;
+
+  --green: #059669;
+  --green-light: #10B981;
+  --green-dark: #047857;
+  --green-glow: #34D399;
+
+  --text: #14161F;
+  --text-soft: #5B5E70;
+  --text-dim: #9296A8;
+
+  --border: #E4E5EE;
+  --bordergreen: #E4E5EE;
+
+  --danger: #DC4545;
 }
 
 

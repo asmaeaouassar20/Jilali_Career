@@ -1,11 +1,11 @@
 import { Component, EventEmitter, inject, Input, OnInit, Output } from '@angular/core';
 import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
 import { IUser } from '../../core/model/interfaces/User.model';
-import { Router, RouterLink } from "@angular/router";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-profile-view-modal',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './profile-view-modal.html',
   styleUrl: './profile-view-modal.css',
 })

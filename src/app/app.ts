@@ -2,14 +2,11 @@ import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { StorageService } from './core/services/storage/storage-service';
-import { MenuBurgerSVG } from "./svg/menu-burger/menu-burger-svg/menu-burger-svg";
-import { CloseBtn } from "./svg/close-btn/close-btn/close-btn";
-import { Global } from './core/constant/Global.constant';
 import { ThemeService } from './core/services/theme/theme-service';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MenuBurgerSVG, CloseBtn],
+  imports: [RouterOutlet],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

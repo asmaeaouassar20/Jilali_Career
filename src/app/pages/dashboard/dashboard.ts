@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { NoteModel } from '../../core/model/classes/Note.model';
 import { StorageService } from '../../core/services/storage/storage-service';
 import { DatePipe } from '@angular/common';
+import { TruncatePipe } from '../../pipe/truncate-pipe';
 
 
 @Component({
   selector: 'app-dashboard',
-  imports: [DatePipe],
+  imports: [DatePipe,TruncatePipe],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

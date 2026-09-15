@@ -13,10 +13,10 @@
                 @if(form.controls.title.hasError('required')){
                     <small class="field-error">Title is required</small>
                 }
-            <textarea placeholder="Write your note..."
+            <textarea  style="margin-top: 10px;" placeholder="Write your note..."
                 formControlName="content"></textarea>
                 @if(form.controls.content.hasError('required')){
-                    <small class="field-error">erreur</small>
+                    <small class="field-error">Content is required</small>
                 }
         </div>
         <div class="modal-footer">

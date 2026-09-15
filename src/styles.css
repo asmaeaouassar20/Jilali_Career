@@ -192,3 +192,9 @@ body {
 #logo-app{
   width: 300px;
 }
+
+.field-error{
+  color: rgb(179, 77, 77);
+  margin-left: 10px;  
+  font-size: 12px;  
+}

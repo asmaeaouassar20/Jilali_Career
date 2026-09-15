@@ -8,6 +8,7 @@
 - ajouter "active" sur la route "Profile" lorsqu'elle est active
 - la traduction de la page "HOME" est terminée , il nous reste les autres pages => on suit la même méthode 
 - TODO functions
+- display "LAST CONNECTION" date
 - fix Responsive design
 - le logo sur la page "http://localhost:4200/home" doit aussi changer en fonction du thème : indigo - green - pink
 - MOntrer le travail à Si Mohamed (jilali)

@@ -40,6 +40,14 @@ export class StorageService {
     if(lang==null) return 'en';
     return lang;
   }
+  setLoginDate(loginDate : Date){    
+    localStorage.setItem(Global.LOGIN_DATE, loginDate.toLocaleString());
+  }
+  getLoginDate(){
+    const date = localStorage.getItem(Global.LOGIN_DATE);
+    if(date) return date;
+    return "__";
+  }
   
 }
 

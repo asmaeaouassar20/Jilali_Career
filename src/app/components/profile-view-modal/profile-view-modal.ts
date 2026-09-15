@@ -2,6 +2,7 @@ import { Component, EventEmitter, inject, Input, OnInit, Output } from '@angular
 import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
 import { IUser } from '../../core/model/interfaces/User.model';
 import { Router } from "@angular/router";
+import { StorageService } from '../../core/services/storage/storage-service';
 
 @Component({
   selector: 'app-profile-view-modal',
@@ -11,7 +12,10 @@ import { Router } from "@angular/router";
 })
 export class ProfileViewModal implements OnInit {
 
+  loginDate! : string;
+
   private connectedUserService = inject(CurrentUserService);
+  private storageService = inject(StorageService);
   private router = inject(Router);
   connectedUser! : IUser | null;
 
@@ -20,6 +24,7 @@ export class ProfileViewModal implements OnInit {
 
   ngOnInit(): void {
     this.connectedUser=this.connectedUserService.getCurrentUser();
+    this.loginDate = this.storageService.getLoginDate();    
   }
   closeModal(){
     this.closeProfileModal.emit();

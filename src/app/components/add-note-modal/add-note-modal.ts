@@ -36,6 +36,6 @@ export class AddNoteModal {
         content : '',
         createdAt : new Date()
       });
-    }  
+    }
   }
 }

@@ -41,12 +41,13 @@ export class AddNote implements OnInit {
     this.isModalAddNoteOpen=false;
   }
   
-  receiveNewNoteAndSave(newNote:NoteModel){
+  receiveNewNoteAndSave(newNote:NoteModel){    
     const idOfLastNote = this.myNotes[this.myNotes.length-1].id;
     newNote.id= idOfLastNote+1;
     this.myNotes.push(newNote);
     localStorage.setItem('my-notes', JSON.stringify(this.myNotes))
-    this.closeModalAddNote()
+    this.closeModalAddNote()    
   }
+
 
 }

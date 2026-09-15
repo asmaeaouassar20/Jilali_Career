@@ -23,13 +23,19 @@ export class AddNoteModal {
   })
 
   closeModal(){
-    this.close.emit();
+    this.close.emit();    
   }
 
   addNewNote(){    
     // Vérification du formulaire 
     if (this.form.valid) { 
       this.newNoteValues.emit(this.form.value)  
+      this.form.reset({
+        id : null,
+        title : '',
+        content : '',
+        createdAt : new Date()
+      });
     }  
   }
 }

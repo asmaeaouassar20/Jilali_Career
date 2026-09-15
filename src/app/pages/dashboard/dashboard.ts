@@ -14,6 +14,7 @@ import { TruncatePipe } from '../../pipe/truncate-pipe';
 export class Dashboard implements OnInit {
 
   userNotes : NoteModel[] = [];
+  noteToDispaly! : NoteModel | undefined;
 
   // on injecte le service => Angular donne une instance de ce service
   constructor(private storageservice : StorageService){}
@@ -30,5 +31,4 @@ export class Dashboard implements OnInit {
   getTimeAgo(){
 
   }
-
 }

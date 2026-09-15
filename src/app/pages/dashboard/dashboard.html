@@ -22,7 +22,7 @@
       </thead>
       <tbody>
         @for(note of userNotes; track $index){
-        <tr>
+        <tr (click)="noteToDispaly=note">
           <td class="col-id">{{$index}}</td>
           <td class="col-id">{{note.id}}</td>
           <td class="col-title">{{note.title}}</td>
@@ -45,16 +45,17 @@
 
 
 
-<div class="modal-overlay" >    
+@if(noteToDispaly){
+  <div class="modal-overlay" >    
         <div class="modal-container">
           <div class="modal-header">            
-            <button class="close-btn">x</button>
+            <button class="close-btn" (click)="noteToDispaly=undefined">x</button>
         </div>
 
-        <div class="modal-body">
-            
-            <p class="display-title">title</p>
-            <div class="display-content">content</div>
+        <div class="modal-body">            
+            <p class="display-title">{{noteToDispaly.title}}</p>
+            <div class="display-content">{{noteToDispaly.content}}</div>
         </div>     
         </div>    
 </div>
+}

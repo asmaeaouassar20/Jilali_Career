@@ -3,6 +3,7 @@ import { NoteModel } from '../../core/model/classes/Note.model';
 import { StorageService } from '../../core/services/storage/storage-service';
 import { DatePipe } from '@angular/common';
 import { TruncatePipe } from '../../pipe/truncate-pipe';
+import { min } from 'rxjs';
 
 
 @Component({
@@ -28,7 +29,24 @@ export class Dashboard implements OnInit {
   }
 
   // TODO
-  getTimeAgo(){
+  getTimeAgo(createdAt : Date) : string{    
+    const currentDate = new Date();    
+    const difference = currentDate.getTime() - new Date(createdAt).getTime();
+    
+    const seconds = Math.floor(difference/1000);
+    const minutes = Math.floor(seconds/60);
+    const hours = Math.floor(minutes/60);
+    const days = Math.floor(hours/24);
 
+    if(seconds<60){
+      return "quelques secondes";
+    }
+    if(minutes<60){
+      return `${minutes} minute${minutes > 1 ? 's' : ''}`;
+    }
+    if(hours < 24){
+      return `${hours} heure${hours>1 ? 's':''}`;
+    }
+    return `${days} jour${days>1 ? 's':''}`;
   }
 }

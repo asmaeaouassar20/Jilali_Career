@@ -10,14 +10,14 @@ import { StorageService } from '../../core/services/storage/storage-service';
   templateUrl: './profile-view-modal.html',
   styleUrl: './profile-view-modal.css',
 })
-export class ProfileViewModal implements OnInit {
-
-  loginDate! : string;
+export class ProfileViewModal implements OnInit {  
 
   private connectedUserService = inject(CurrentUserService);
   private storageService = inject(StorageService);
   private router = inject(Router);
   connectedUser! : IUser | null;
+  loginDate! : string;
+  logoutDate! : string;
 
   @Input() isOpen = false;
   @Output() closeProfileModal = new EventEmitter<void>()
@@ -25,6 +25,7 @@ export class ProfileViewModal implements OnInit {
   ngOnInit(): void {
     this.connectedUser=this.connectedUserService.getCurrentUser();
     this.loginDate = this.storageService.getLoginDate();    
+    this.logoutDate = this.storageService.getLogoutDate();   
   }
   closeModal(){
     this.closeProfileModal.emit();

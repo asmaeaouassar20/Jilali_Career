@@ -25,6 +25,7 @@ export class CurrentUserService {
   logout(){
       localStorage.removeItem(Global.LOGIN_LOCAL_KEY);
       localStorage.removeItem(Global.LOGIN_DATE)
+      localStorage.setItem(Global. LOGOUT_DATE,(new Date()).toLocaleString());
       this.router.navigate(["/home"]);  
   }
 }

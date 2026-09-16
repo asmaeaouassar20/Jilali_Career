@@ -9,7 +9,7 @@ import { Global } from '../../constant/Global.constant';
 })
 export class StorageService {
 
-  getUserNotes() : NoteModel[] {
+  getUserNotes(): NoteModel[] {
     const notes = localStorage.getItem(Global.NOTES_LOCAL_KEY);
     if (notes) {
       return JSON.parse(notes);
@@ -21,34 +21,40 @@ export class StorageService {
     const newNotes: NoteModel[] = [
       { id: 100, title: "Prepare Your Self-Introduction", content: "Prepare a 2-minute introduction covering your background, key skills, professional experience, and career goals.", createdAt: new Date() },
       { id: 200, title: "Common Interview Questions", content: "Prepare answers for common questions such as: Tell me about yourself, What are your strengths and weaknesses?, Why do you want to join our company?, and Where do you see yourself in five years?", createdAt: new Date() }
-     ]
+    ]
     return newNotes
   }
 
-  deleteNote(indexNote : number) : NoteModel[]{
+  deleteNote(indexNote: number): NoteModel[] {
     const notes = this.getUserNotes();
-    notes.splice(indexNote,1);
+    notes.splice(indexNote, 1);
     localStorage.setItem(Global.NOTES_LOCAL_KEY, JSON.stringify(notes));
     return notes;
   }
 
-  setLanguageTranslate(language : string){
-    localStorage.setItem('language',language);
+  setLanguageTranslate(language: string) {
+    localStorage.setItem('language', language);
   }
-  getLanguageTranslate() : string{
+  getLanguageTranslate(): string {
     const lang = localStorage.getItem('language');
-    if(lang==null) return 'en';
+    if (lang == null) return 'en';
     return lang;
   }
-  setLoginDate(loginDate : Date){    
+  setLoginDate(loginDate: Date) {
     localStorage.setItem(Global.LOGIN_DATE, loginDate.toLocaleString());
   }
-  getLoginDate(){
+  getLoginDate() {
     const date = localStorage.getItem(Global.LOGIN_DATE);
-    if(date) return date;
+    if (date) return date;
     return "__";
   }
-  
+
+  getLogoutDate() {
+    const date = localStorage.getItem(Global.LOGOUT_DATE);
+    if (date) return date;
+    return "__";
+  }
+
 }
 
 

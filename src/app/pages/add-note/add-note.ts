@@ -51,4 +51,8 @@ export class AddNote implements OnInit {
   }
 
 
+   deleteNote(IndexNote:number){
+    this.myNotes=this.storageservice.deleteNote(IndexNote);
+  }
+
 }

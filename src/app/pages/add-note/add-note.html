@@ -19,6 +19,10 @@
     <h3>{{n.title}}</h3>
     <p>{{n.content}}</p>
     <span class="createdAtNote">{{n.createdAt | date : 'dd/MM/yyyy HH:mm:ss'}}</span>
+    <button class="icon-btn btn-delete-note danger" (click)="deleteNote($index)"><svg viewBox="0 0 24 24"><path
+                  d="M3 6h18" /><path
+                  d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /><path
+                  d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6" /></svg></button>
   </div>
   }
 

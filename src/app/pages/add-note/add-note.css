@@ -118,3 +118,13 @@
   font-size: 12px;
   letter-spacing: 1.5px;
 }
+
+
+.note-card{
+  position: relative;
+}
+.btn-delete-note{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}

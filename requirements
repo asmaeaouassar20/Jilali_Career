@@ -1,5 +1,4 @@
 - problème dans : responsive design
-- add : createdAt and delete btn in AddNote Compoenent
 - fonctionnalité à implémenter : méthode pour calculer le temps passé dans dashboard : il y  a ....  ( getTimeAgo)
 - Dashboard need to be enhanced : for example: add new note btn ...
 - dans onglet review : le niveau de difficulté doit être coloré

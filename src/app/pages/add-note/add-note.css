@@ -92,7 +92,8 @@
   stroke-linejoin: round;
 }
 
-.note-card h3 , .note-card-add h3 {
+.note-card h3,
+.note-card-add h3 {
   font-family: 'Fraunces', serif;
   font-weight: 600;
   font-size: 19px;
@@ -101,8 +102,19 @@
   margin-bottom: 8px;
 }
 
-.note-card p , .note-card-add p{
+.note-card p,
+.note-card-add p {
   font-size: 13.5px;
   line-height: 1.55;
   color: var(--text-soft);
+}
+
+.note-card p {
+  margin-bottom: 14.5px;
+  color: var(--text-soft);
+}
+
+.createdAtNote {
+  font-size: 12px;
+  letter-spacing: 1.5px;
 }

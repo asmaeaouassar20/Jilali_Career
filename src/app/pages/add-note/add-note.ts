@@ -3,13 +3,14 @@ import { NoteModel } from '../../core/model/classes/Note.model';
 import { Router } from '@angular/router';
 import { AddNoteModal } from "../../components/add-note-modal/add-note-modal";
 import { StorageService } from '../../core/services/storage/storage-service';
+import { DatePipe } from '@angular/common';
 
 
 
 
 @Component({
   selector: 'app-add-note',
-  imports: [AddNoteModal],
+  imports: [AddNoteModal, DatePipe],
   templateUrl: './add-note.html',
   styleUrl: './add-note.css',
 })

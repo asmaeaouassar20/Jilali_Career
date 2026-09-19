@@ -28,7 +28,7 @@ export class Dashboard implements OnInit {
     this.userNotes=this.storageservice.deleteNote(IndexNote);
   }
 
-  // TODO
+  
   getTimeAgo(createdAt : Date) : string{    
     const currentDate = new Date();    
     const difference = currentDate.getTime() - new Date(createdAt).getTime();

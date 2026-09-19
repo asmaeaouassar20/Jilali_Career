@@ -10,9 +10,10 @@ import { Global } from '../../constant/Global.constant';
 export class StorageService {
 
   getUserNotes(): NoteModel[] {
-    const notes = localStorage.getItem(Global.NOTES_LOCAL_KEY);
-    if (notes) {
-      return JSON.parse(notes);
+    const notes = localStorage.getItem(Global.NOTES_LOCAL_KEY);   
+    if (notes && notes.length!=0) {
+      const tabNotes = JSON.parse(notes)
+      if(tabNotes.length!=0) return tabNotes;
     }
     return this.factoryNotes()
   }

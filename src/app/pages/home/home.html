@@ -27,9 +27,8 @@
        <a routerLink="/login" >{{'HOME.LogIn'  | translate }}</a>{{'HOME.DESC' | translate }}
     </div>
     <div>
-        <img src="logo.png" alt="logo app" id="logo-app" />
-    </div>
- 
+        <img [src]="getLogo()" alt="logo app" id="logo-app" />
+    </div> 
 </div>
 
 </div>

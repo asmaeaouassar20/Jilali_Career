@@ -1,9 +1,8 @@
 - problème dans : responsive design
-- Dashboard need to be enhanced : for example: add new note btn ...
+- Dashboard need to be enhanced : for example: add new note btn ... (add more statistics)
 - dans onglet review : le niveau de difficulté doit être coloré
 - ajouter "active" sur la route "Profile" lorsqu'elle est active
 - la traduction de la page "HOME" est terminée , il nous reste les autres pages => on suit la même méthode 
-- TODO functions
 - fix Responsive design
 - Ajouter "inscription" localstorage
 - MOntrer le travail à Si Mohamed (jilali)

@@ -28,4 +28,15 @@ export class CurrentUserService {
       localStorage.setItem(Global. LOGOUT_DATE,(new Date()).toLocaleString());
       this.router.navigate(["/home"]);  
   }
+
+  getAvatarLetters(){
+    const user = this.getCurrentUser();
+    if(!user) this.logout();
+    const letter1OfFirstName=user?.firstName.slice(0,1).toUpperCase();
+    const letter1OfLaststName=user?.lastName.slice(0,1).toUpperCase();
+    if(letter1OfFirstName && letter1OfLaststName){
+      return letter1OfFirstName+letter1OfLaststName;
+    }
+    return "login";
+  }
 }

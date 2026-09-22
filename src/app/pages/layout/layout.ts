@@ -38,17 +38,15 @@ export class Layout {
     this.currentUserService.logout();  
   }
 
-  // TODO
-  getAvatarLetters(){
-
-  }
-
-
   openSideBarMenu(){
     this.isSidebarOpen=true;
   }
   closeSideBar(){
     this.isSidebarOpen=false;
+  }
+
+  getAvatar(){
+    return this.currentUserService.getAvatarLetters();
   }
  
 }

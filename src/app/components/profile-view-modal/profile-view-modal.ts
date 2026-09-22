@@ -37,4 +37,7 @@ export class ProfileViewModal implements OnInit {
   logout(){
     this.connectedUserService.logout();
   }
+  getAvatar(){
+    return this.connectedUserService.getAvatarLetters();
+  }
 }

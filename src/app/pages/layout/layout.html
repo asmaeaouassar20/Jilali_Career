@@ -9,7 +9,7 @@
       (isProfileDetailsViewOpenEvent)="recieveProfileDetailsViewOpenValue($event)" />
 
     <div class="sidebar-foot">
-      <div class="avatar">JA</div>
+      <div class="avatar">{{getAvatar()}}</div>
       <div class="who">
         <strong>{{loggedUser?.lastName}} {{loggedUser?.firstName}}</strong>
         <small>{{loggedUser?.email}}</small>

@@ -4,11 +4,12 @@ import { StorageService } from '../../core/services/storage/storage-service';
 import { DatePipe } from '@angular/common';
 import { TruncatePipe } from '../../pipe/truncate-pipe';
 import { min } from 'rxjs';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-dashboard',
-  imports: [DatePipe,TruncatePipe],
+  imports: [DatePipe, TruncatePipe, RouterLink],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })

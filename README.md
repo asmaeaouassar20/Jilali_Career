@@ -85,3 +85,14 @@ export class NavappjilaliComponent {
 
 
 ### pipes
+#### TruncatePipe
+- TruncatePipe est un pipe Angular permettant de limiter la longueur d’un texte.
+- Il prend un texte en entrée.
+- La limite par défaut est de 50 caractères.
+- Si le texte dépasse cette limite, il est tronqué et ... est ajouté.
+- La limite peut être personnalisée.
+**Exemple :**
+  
+  ``` {{ content | truncate:30 }} ```
+
+Ici, le texte sera limité à 30 caractères.

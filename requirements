@@ -5,4 +5,6 @@
 - la traduction de la page "HOME" est terminée , il nous reste les autres pages => on suit la même méthode 
 - fix Responsive design
 - Ajouter "inscription" localstorage
+- dans "nav" on a : setting -> il faut penser à y ajouter des fonctionnalitées ex : changer la langue, changer le thème et la couleur, changer l'avatar par une phot perso
+- Ajouter un formulaire pour l'inscription
 - dans le fichier nommé : "profile-view-modal.html" décommentez : "modal-footer" pour implémenter les fonctionnalité correspendantes

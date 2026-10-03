@@ -13,8 +13,8 @@ import { StorageService } from '../../core/services/storage/storage-service';
 })
 export class Login {
   loginObj : IUser = {
-    "firstName" : "TestFirstName",
-    "lastName" : "TestLastName",
+    "firstName" : "jilali",
+    "lastName" : "java",
     "email" : "",
     "password" : ""
   }

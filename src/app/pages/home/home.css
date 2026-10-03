@@ -121,7 +121,7 @@
 
 .btn-secondary:hover {
     border-color: var(--indigo-dark);
-    color: #fff;
+    color: var(--text);
     background: rgba(99, 102, 241, 0.08);
 }
 

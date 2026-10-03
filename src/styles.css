@@ -181,12 +181,12 @@ body {
 }
 
 .login-link a:hover {
-    color: #fff;
+    color: var(--text);
     text-decoration: underline;
 }
 
 .goback-link a:hover {
-    color: #fff;
+    color: var(--text);
     text-decoration: underline;
 }
 #logo-app{

@@ -1,3 +1,61 @@
-<div>
-    <h1>en cours . . .</h1>
+<div class="orb a"></div>
+<div class="orb b"></div>
+
+<div class="head">
+    <span class="eyebrow">
+        <svg viewBox="0 0 24 24"><path d="M9 18h6" /><path d="M10 22h4" /><path
+                d="M12 2a7 7 0 0 0-4 12.7c.6.4 1 1.2 1 2v.3h6v-.3c0-.8.4-1.6 1-2A7 7 0 0 0 12 2z" /></svg>
+        Interview Prep
+    </span>
+    <h1>Web Development Q&amp;A</h1>
+    <p>Swipe through common front-end &amp; JavaScript interview questions</p>
 </div>
+
+<div class="slider-wrap">    
+        <button class="arrow-btn" [disabled]="currentIndexQuestion==0" id="prevBtn" aria-label="Previous" (click)="decrement()">
+        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg>
+    </button>
+   
+
+    <div class="card-viewport">
+        <div class="card-track" id="track">            
+            <div class="qa-card">
+                <div class="tag-row">
+                    <div class="index-badge">{{currentQuestion.indexBadge}}</div>
+                    <span class="difficulty">{{currentQuestion.difficulty}}</span>
+                </div>                
+                <div class="question">{{currentQuestion.question}}</div>   
+
+                <div class="answer-label">Options</div>
+                <div class="answer">
+                    <ul>
+                        <li 
+                        (click)="choisirReponse(0)" 
+                        [ngClass]="{'correctAnswer' : optionCorrect[0] , 'falseAnswer' : optionFalse[0] }"
+                        >{{currentQuestion.options[0]}}</li>
+                        
+                        <li 
+                        (click)="choisirReponse(1)" 
+                        [ngClass]="{'correctAnswer' : optionCorrect[1] , 'falseAnswer' : optionFalse[1] }"
+                        >{{currentQuestion.options[1]}}</li>
+                        
+                        <li
+                         (click)="choisirReponse(2)"
+                         [ngClass]="{'correctAnswer' : optionCorrect[2] , 'falseAnswer' : optionFalse[2] }"
+                        >{{currentQuestion.options[2]}}</li>
+                    </ul>
+                </div>               
+                            
+            </div>            
+        </div>
+    </div>
+
+    <button class="arrow-btn" id="nextBtn" aria-label="Next" (click)="increment()" [disabled]="currentIndexQuestion==questionsQuizWithOptions.length-1">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg>
+    </button>
+</div>
+
+<div class="dots" id="dots"></div>
+<div class="counter"><strong id="currentNum">{{currentIndexQuestion+1}}</strong> / <span
+        id="totalNum">12</span></div>
+

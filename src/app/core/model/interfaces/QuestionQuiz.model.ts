@@ -4,3 +4,11 @@ export interface QuestionQuiz {
     answer: string,
     question: string
 }
+
+export interface QuestionQuizWithOptions{
+    indexBadge: string,
+    difficulty: string,
+    question: string,
+    options: string[],
+    correctAnswerIndex: number
+}

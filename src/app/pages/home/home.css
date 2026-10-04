@@ -129,12 +129,12 @@
     border: none;
     color: #fff;
     background: linear-gradient(135deg, var(--indigo-light), var(--indigo-dark));
-    box-shadow: 0 10px 24px -8px rgba(99, 102, 241, 0.75);
+    box-shadow: 0 10px 24px -8px var(--indigo);
 }
 
 .btn-primary:hover {
     transform: translateY(-1px);
-    box-shadow: 0 14px 30px -8px rgba(99, 102, 241, 0.9);
+    box-shadow: 0 14px 30px -8px var(--text-soft);
 }
 
 .btn:active {

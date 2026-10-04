@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { Global } from '../../constant/Global.constant';
 
 
-export type Theme = 'indigo' | 'green' | 'pink' | 'light';
+export type Theme = 'indigo' | 'green' | 'pink' | 'light' ;
 
 @Injectable({
   providedIn: 'root',
@@ -16,6 +16,7 @@ export class ThemeService {
     let logo = "logo.png";
     if(theme == "pink") logo="logo-pink.png";
     if(theme == "green") logo = "logo-green.png";
+    if(theme == "light") logo = "logo-light.png";
     localStorage.setItem(Global.LOGO_SRC,logo);
   }
 

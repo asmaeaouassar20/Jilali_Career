@@ -104,31 +104,31 @@
 /* Thème LIGHT  */
 [data-theme="light"] {
   --bg: #FFFFFF;
-  --bg1: rgba(99, 102, 241, 0.06);
-  --bg2: rgba(124, 127, 255, 0.05);
-  --bg-deep: #F4F5F9;
+  --bg1: rgba(0, 0, 0, 0.03);
+  --bg2: rgba(0, 0, 0, 0.02);
+  --bg-deep: #F4F4F5;
 
   --surface: #FFFFFF;
-  --surface-2: #F7F7FB;
+  --surface-2: #F7F7F8;
 
-  --indigo: #6366F1;
-  --indigo-light: #818CF8;
-  --indigo-dark: #4548C9;
-  --violet-glow: #7C7FFF;
+  --indigo: #1A1A1E;
+  --indigo-light: #3F3F46;
+  --indigo-dark: #000000;
+  --violet-glow: #52525B;
 
-  --green: #059669;
-  --green-light: #10B981;
-  --green-dark: #047857;
-  --green-glow: #34D399;
+  --green: #27272A;
+  --green-light: #52525B;
+  --green-dark: #000000;
+  --green-glow: #71717A;
 
-  --text: #14161F;
-  --text-soft: #5B5E70;
-  --text-dim: #9296A8;
+  --text: #18181B;
+  --text-soft: #52525B;
+  --text-dim: #A1A1AA;
 
-  --border: #E4E5EE;
-  --bordergreen: #E4E5EE;
+  --border: #E4E4E7;
+  --bordergreen: #E4E4E7;
 
-  --danger: #DC4545;
+  --danger: #DC2626;
 }
 
 

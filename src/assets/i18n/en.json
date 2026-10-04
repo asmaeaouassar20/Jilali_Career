@@ -14,7 +14,8 @@
         "EMAIL" : "Email",
         "PSWRD" : "Password",
         "SIGNIN" : "Sign In",
-        "NOTE" : "Use jilali@interview.com / password to sign in",
+        "USE" : "Use",
+        "NOTE": "to sign in",
         "HOME" : "Home"
     }
 }

@@ -2,12 +2,12 @@
 
   <div class="card">
 
-    <h1>Welcome back</h1>
-    <p class="subtitle">Sign in to continue to your account</p>
+    <h1>{{"LOGIN.TITLE" | translate}}</h1>
+    <p class="subtitle">{{"LOGIN.SUB-TITLE" | translate}}</p>
 
     <form>
       <div class="field">
-        <label for="email">Email</label>
+        <label for="email">{{"LOGIN.EMAIL" | translate}}</label>
         <div class="input-wrap">
           <input type="email" id="email" name="email"
             [(ngModel)]="loginObj.email" placeholder="you@example.com" required>
@@ -19,7 +19,7 @@
       </div>
 
       <div class="field">
-        <label for="password">Password</label>
+        <label for="password">{{"LOGIN.PSWRD" | translate}}</label>
         <div class="input-wrap">
           <input type="password" id="password" name="password"
             [(ngModel)]="loginObj.password" placeholder="••••••••" required>
@@ -30,16 +30,15 @@
         </div>
       </div>
 
-      <button type="submit" (click)="onLogin()">Sign In</button>
+      <button type="submit" (click)="onLogin()">{{"LOGIN.SIGNIN" | translate}}</button>
     </form>
 
     <p class="divider">
-      Use <strong>jilali@interview.com</strong> / <strong>password</strong> to
-      sign in
+      {{"LOGIN.USE" | translate}} <strong> jilali@interview.com </strong> / <strong>password</strong>  {{"LOGIN.NOTE" | translate}}
     </p>
     
      <div class="login-link">
-       <a routerLink="/home" >Home</a>
+       <a routerLink="/home" >{{"LOGIN.HOME" | translate}}</a>
     </div>
  
   </div>

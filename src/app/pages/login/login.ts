@@ -4,10 +4,11 @@ import { Router, RouterLink } from '@angular/router';
 import { Global } from '../../core/constant/Global.constant';
 import { IUser } from '../../core/model/interfaces/User.model';
 import { StorageService } from '../../core/services/storage/storage-service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-login',
-  imports: [FormsModule,RouterLink],
+  imports: [FormsModule,RouterLink,TranslatePipe],
   templateUrl: './login.html',
   styleUrl: './login.css',
 })

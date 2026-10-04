@@ -18,7 +18,7 @@
     box-shadow:
       0 1px 1px rgba(0,0,0,0.2),
       0 8px 16px -6px rgba(0,0,0,0.35),
-      0 40px 70px -25px rgba(99,102,241,0.45);
+      0 40px 70px -25px var(--indigo);
     animation: rise 0.65s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
@@ -120,7 +120,7 @@
   input:focus {
     border-color: var(--indigo);
     background: #0D1122;
-    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.22);
+    box-shadow: 0 0 0 4px var(--indigo-dark);
   }
 
   .input-wrap:focus-within svg {
@@ -141,7 +141,7 @@
     padding: 13px;
     cursor: pointer;
     transition: box-shadow 0.25s ease, transform 0.12s ease;
-    box-shadow: 0 10px 26px -8px rgba(99, 102, 241, 0.75);
+    box-shadow: 0 10px 26px -8px var(--indigo);
     opacity: 0;
     animation: fadeUp 0.5s ease forwards 0.4s;
   }
@@ -158,7 +158,7 @@
   button:hover::before { transform: translateX(100%); }
 
   button:hover {
-    box-shadow: 0 14px 32px -8px rgba(99, 102, 241, 0.9);
+    box-shadow: 0 14px 32px -8px var(--indigo);
     transform: translateY(-1px);
   }
 

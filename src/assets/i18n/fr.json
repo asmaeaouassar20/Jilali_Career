@@ -6,5 +6,14 @@
         "StartChallenge": "Commencer le défi",
         "LogIn": "Se connecter",
         "DESC": " pour accéder à plus de fonctionnalités "
+    },
+    "LOGIN": {
+        "TITLE": "Bon retour",
+        "SUB-TITLE": "Connectez-vous pour accéder à votre compte",
+        "EMAIL": "E-mail",
+        "PSWRD": "Mot de passe",
+        "SIGNIN": "Se connecter",
+        "NOTE": "Utilisez jilali@interview.com / password pour vous connecter",
+        "HOME": "Accueil"
     }
 }

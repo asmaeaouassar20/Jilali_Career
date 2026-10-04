@@ -6,5 +6,15 @@
         "StartChallenge" : "Start Challenge",
         "LogIn" : "Log in",
         "DESC" : " to access more features "
-    }    
+    },
+    
+    "LOGIN" : {
+        "TITLE" : "Welcome back",
+        "SUB-TITLE" : "Sign in to continue to your account",
+        "EMAIL" : "Email",
+        "PSWRD" : "Password",
+        "SIGNIN" : "Sign In",
+        "NOTE" : "Use jilali@interview.com / password to sign in",
+        "HOME" : "Home"
+    }
 }

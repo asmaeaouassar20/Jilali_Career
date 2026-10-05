@@ -27,9 +27,9 @@
     gap: 7px;
     padding: 5px 13px;
     border-radius: 999px;
-    background: rgba(99, 102, 241, 0.14);
+    background: var(--indigo-light);
     border: 1px solid rgba(99, 102, 241, 0.35);
-    color: var(--indigo-light);
+    color: #fff;
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -42,8 +42,8 @@
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 28px;
-    color: #fff;
-    letter-spacing: -0.01em;
+    color: var(--text);
+    letter-spacing: -0.01em;    
   }
 
   .head p {
@@ -96,7 +96,7 @@
     border-color: var(--indigo-dark);
     box-shadow:
       0 1px 1px rgba(0,0,0,0.15),
-      0 26px 50px -24px rgba(99,102,241,0.55);
+      0 26px 50px -24px var(--indigo-light);
   }
 
   .lamp-icon {
@@ -108,7 +108,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 10px 22px -6px rgba(99,102,241,0.7);
+    box-shadow: 0 10px 22px -6px var(--indigo-light);
     transition: transform 0.25s ease;
   }
 
@@ -130,7 +130,7 @@
     font-family: 'Fraunces', serif;
     font-weight: 600;
     font-size: 16.5px;
-    color: #fff;
+    color: var(--indigo-dark);
     letter-spacing: -0.01em;
     margin-bottom: 5px;
   }

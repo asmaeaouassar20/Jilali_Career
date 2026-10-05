@@ -111,7 +111,7 @@
     transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   }
 
-  input::placeholder { color: #565C7C; }
+  input::placeholder { color: var(--indigo-dark); }
 
   input:hover {
     border-color: var(--indigo-dark);
@@ -119,12 +119,13 @@
 
   input:focus {
     border-color: var(--indigo);
-    background: #0D1122;
+    background: var(--indigo-dark);
+    color: white;
     box-shadow: 0 0 0 4px var(--indigo-dark);
   }
 
   .input-wrap:focus-within svg {
-    stroke: var(--indigo-light);
+    stroke: white;
   }  
 
   button {

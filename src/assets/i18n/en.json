@@ -21,6 +21,7 @@
     "CAREER_ADVICE": {
         "TITLE": "Career Advice",
         "SUB-TITLE": "Tips to grow your developer career",
+        "SUB-TITLE-2" : "Bite-sized advice to help you level up, one idea at a time",
         "GOBACK" : "Go back" ,
         "GIT_DEBUGGING": {
             "TITLE": "Master Git and debugging tools",

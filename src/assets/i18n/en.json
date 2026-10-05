@@ -1,21 +1,58 @@
 {
-    "HOME" : {
-        "TITLE" : "Jilali Career Challenge and Advices",
-        "SUB-TITLE" : "Sharpen your skills, take on daily challenges, and get guidance to grow your developer career.",
-        "CareerAdvice" : "Career Advice",
-        "StartChallenge" : "Start Challenge",
-        "LogIn" : "Log in",
-        "DESC" : " to access more features "
+    "HOME": {
+        "TITLE": "Jilali Career Challenge and Advices",
+        "SUB-TITLE": "Sharpen your skills, take on daily challenges, and get guidance to grow your developer career.",
+        "CareerAdvice": "Career Advice",
+        "StartChallenge": "Start Challenge",
+        "LogIn": "Log in",
+        "DESC": " to access more features "
     },
-    
-    "LOGIN" : {
-        "TITLE" : "Welcome back",
-        "SUB-TITLE" : "Sign in to continue to your account",
-        "EMAIL" : "Email",
-        "PSWRD" : "Password",
-        "SIGNIN" : "Sign In",
-        "USE" : "Use",
+    "LOGIN": {
+        "TITLE": "Welcome back",
+        "SUB-TITLE": "Sign in to continue to your account",
+        "EMAIL": "Email",
+        "PSWRD": "Password",
+        "SIGNIN": "Sign In",
+        "USE": "Use",
         "NOTE": "to sign in",
-        "HOME" : "Home"
+        "HOME": "Home"
+    },
+
+    "CAREER_ADVICE": {
+        "TITLE": "Career Advice",
+        "SUB-TITLE": "Tips to grow your developer career",
+        "GOBACK" : "Go back" ,
+        "GIT_DEBUGGING": {
+            "TITLE": "Master Git and debugging tools",
+            "DESC": "Knowing how to bisect bugs, write clear commit messages, and use your browser’s debugger efficiently saves more time than typing fast ever will."
+        },
+        "BUSINESS_IMPACT": {
+            "TITLE": "Understand the business impact",
+            "DESC": "Great developers don't just write code; they solve user and business problems. Always ask why a feature is being built before deciding how to build it."
+        },
+        "TESTS": {
+            "TITLE": "Write tests for your future self",
+            "DESC": "Automated tests aren't a chore—they are safety nets. They give you the confidence to refactor and push changes without breaking existing functionality."
+        },
+        "CODE_REVIEWS": {
+            "TITLE": "Embrace constructive code reviews",
+            "DESC": "Feedback on your pull requests isn't a critique of your intelligence. Treat code reviews as a free learning opportunity and a way to elevate team standards."
+        },
+        "SOFT_SKILLS": {
+            "TITLE": "Improve your soft skills",
+            "DESC": "Technical chops get you hired, but empathy, active listening, and clear written communication are what make you a senior engineer people want to work with."
+        },
+        "STEP_AWAY": {
+            "TITLE": "Learn to step away when stuck",
+            "DESC": "Staring at a bug for hours often yields diminishing returns. A short walk or a good night's sleep allows your brain to find solutions passively."
+        },
+        "DOCUMENTATION": {
+            "TITLE": "Document as you go",
+            "DESC": "Good documentation saves hours of onboarding and troubleshooting for your team. If you struggled to figure something out, write down the fix for others."
+        },
+        "WORK_LIFE_BALANCE": {
+            "TITLE": "Prioritize work-life balance",
+            "DESC": "Burnout is the biggest threat to a long software engineering career. Pace yourself, set clear boundaries, and maintain hobbies outside of technology."
+        }
     }
 }

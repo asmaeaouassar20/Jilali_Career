@@ -13,8 +13,45 @@
         "EMAIL": "E-mail",
         "PSWRD": "Mot de passe",
         "SIGNIN": "Se connecter",
-        "USE" : "Utilisez",
+        "USE": "Utilisez",
         "NOTE": "pour vous connecter",
         "HOME": "Accueil"
+    },
+    "CAREER_ADVICE": {
+        "TITLE": "Conseils de carrière",
+        "SUB-TITLE": "Conseils pour faire évoluer votre carrière de développeur",
+        "GOBACK": "Retourner",
+        "GIT_DEBUGGING": {
+            "TITLE": "Maîtrisez Git et les outils de débogage",
+            "DESC": "Savoir utiliser git bisect pour trouver les bugs, rédiger des messages de commit clairs et utiliser efficacement le débogueur de votre navigateur vous fera gagner bien plus de temps que de simplement coder plus vite."
+        },
+        "BUSINESS_IMPACT": {
+            "TITLE": "Comprenez l'impact métier",
+            "DESC": "Les bons développeurs ne se contentent pas d'écrire du code ; ils résolvent des problèmes utilisateurs et métier. Demandez-vous toujours pourquoi une fonctionnalité est développée avant de décider comment la construire."
+        },
+        "TESTS": {
+            "TITLE": "Écrivez des tests pour votre futur vous",
+            "DESC": "Les tests automatisés ne sont pas une corvée : ce sont des filets de sécurité. Ils vous donnent la confiance nécessaire pour refactoriser et déployer des modifications sans casser les fonctionnalités existantes."
+        },
+        "CODE_REVIEWS": {
+            "TITLE": "Adoptez les revues de code constructives",
+            "DESC": "Les retours sur vos pull requests ne sont pas une critique de votre intelligence. Considérez les revues de code comme une opportunité gratuite d'apprendre et d'améliorer les standards de l'équipe."
+        },
+        "SOFT_SKILLS": {
+            "TITLE": "Améliorez vos compétences relationnelles",
+            "DESC": "Les compétences techniques vous permettent d'être recruté, mais l'empathie, l'écoute active et une communication écrite claire sont ce qui fait de vous un développeur senior avec qui les autres veulent travailler."
+        },
+        "STEP_AWAY": {
+            "TITLE": "Apprenez à prendre du recul lorsque vous êtes bloqué",
+            "DESC": "Fixer un bug pendant des heures donne souvent des résultats de moins en moins satisfaisants. Une courte promenade ou une bonne nuit de sommeil permet à votre cerveau de trouver naturellement des solutions."
+        },
+        "DOCUMENTATION": {
+            "TITLE": "Documentez au fur et à mesure",
+            "DESC": "Une bonne documentation permet à votre équipe de gagner des heures lors de l'intégration et du dépannage. Si vous avez eu du mal à trouver une solution, notez-la pour aider les autres."
+        },
+        "WORK_LIFE_BALANCE": {
+            "TITLE": "Privilégiez l'équilibre entre vie professionnelle et vie personnelle",
+            "DESC": "L'épuisement professionnel est l'une des plus grandes menaces pour une longue carrière dans le développement logiciel. Avancez à votre rythme, fixez des limites claires et gardez des activités en dehors de la technologie."
+        }
     }
 }

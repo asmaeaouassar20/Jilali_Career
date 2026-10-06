@@ -1,10 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { QuestionQuiz } from '../../core/model/interfaces/QuestionQuiz.model';
 import { ReviewService } from '../../core/services/review/review-service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-review',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './review.html',
   styleUrl: './review.css',
 })

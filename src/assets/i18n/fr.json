@@ -74,5 +74,10 @@
         "TH1": "Titre",
         "TH2": "Contenu",
         "TH3": "Date de création"
+    },
+    "REVIEW": {
+        "TITLE": "Préparation aux entretiens",
+        "SUB-TITLE": "Questions-réponses sur le développement web",
+        "SUB-TITLE2": "Faites défiler les questions courantes d’entretien sur le développement front-end et JavaScript"
     }
 }

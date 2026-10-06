@@ -74,5 +74,10 @@
         "TH1" : "title",
         "TH2" : "content",
         "TH3" : "created at"
+    },
+    "REVIEW" : {
+        "TITLE" : "Interview Prep",
+        "SUB-TITLE" : "Web Development Q&A",
+        "SUB-TITLE2" : "Swipe through common front-end & JavaScript interview questions"
     }
 }

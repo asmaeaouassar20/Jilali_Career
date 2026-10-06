@@ -54,5 +54,17 @@
             "TITLE": "Privilégiez l'équilibre entre vie professionnelle et vie personnelle",
             "DESC": "L'épuisement professionnel est l'une des plus grandes menaces pour une longue carrière dans le développement logiciel. Avancez à votre rythme, fixez des limites claires et gardez des activités en dehors de la technologie."
         }
+    },
+    "NAV-BAR": {
+        "TITLE": "Carrière Jilali",
+        "DASHBOARD": "Tableau de bord",
+        "REVIEW": "Évaluation",
+        "INTERVIEW-PRACTICE": "Entraînement aux entretiens",
+        "SUCCESS-STORIES": "Histoires de réussite",
+        "CAREER-ADVICE": "Conseils de carrière",
+        "ADD-NOTE": "Ajouter une note",
+        "PERSONAL-SPACE": "Espace personnel",
+        "PROFILE": "Profil",
+        "LOGOUT": "Se déconnecter"
     }
 }

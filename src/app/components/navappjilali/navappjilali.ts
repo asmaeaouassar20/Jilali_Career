@@ -2,10 +2,11 @@ import { Component, EventEmitter, inject, Input, OnInit, Output } from '@angular
 import { RouterLink, RouterLinkActive } from "@angular/router";
 import { IUser } from '../../core/model/interfaces/User.model';
 import { CurrentUserService } from '../../core/services/currentuser/current-user-service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navappjilali',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, TranslatePipe],
   templateUrl: './navappjilali.html',
   styleUrl: './navappjilali.css',
 })

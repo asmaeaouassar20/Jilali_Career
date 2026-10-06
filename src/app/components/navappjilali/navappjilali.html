@@ -1,6 +1,6 @@
  <nav>
     <a class="app-title" routerLink="/jilaliapp/dashboard">               
-        Jilali Career
+        {{ "NAV-BAR.TITLE" | translate}}
     </a>
 
     <a class="nav-item" routerLink="/jilaliapp/dashboard" routerLinkActive="active">
@@ -11,7 +11,7 @@
             <rect x="3" y="14" width="7" height="7" rx="1" />
             <rect x="14" y="14" width="7" height="7" rx="1" />
         </svg>
-        Dashboard
+        {{ "NAV-BAR.DASHBOARD" | translate}}
     </a>
 
     <a class="nav-item" routerLink="/jilaliapp/review"  routerLinkActive="active">
@@ -22,7 +22,7 @@
             <path d="M8 13h5" />
             <path d="M8 17h3" />
         </svg>
-        Review
+        {{ "NAV-BAR.REVIEW" | translate}}
     </a>
 
     <a class="nav-item" routerLink="/jilaliapp/practice"  routerLinkActive="active">
@@ -37,7 +37,7 @@
             <path d="M11 17h2" />
             <path d="M15 17h2" />
         </svg>
-        Interview Practice
+        {{"NAV-BAR.INTERVIEW-PRACTICE" | translate}}
     </a>
 
     <a class="nav-item" routerLink="/jilaliapp/success-stories"  routerLinkActive="active">
@@ -48,7 +48,7 @@
             <circle cx="17" cy="9" r="2.5" />
             <path d="M16 14c3 0 5 2.2 5 5" />
         </svg>
-        Success Stories
+        {{ "NAV-BAR.SUCCESS-STORIES" | translate}}
     </a>
 
     <a class="nav-item" routerLink="/jilaliapp/career"  routerLinkActive="active" >
@@ -60,7 +60,7 @@
                 d="M8.5 14.5A6 6 0 1 1 15.5 14c-.8.6-1.5 1.4-1.8 2.5h-3.4c-.3-1.1-1-1.9-1.8-2.5z" />
             <path d="M12 2v2" />
         </svg>
-        Career Advice
+        {{ "NAV-BAR.CAREER-ADVICE" | translate}}
     </a>
 
   
@@ -74,12 +74,14 @@
     <path d="M17 15h5"/>
     <path d="M19.5 12.5v5"/>
   </svg>
-  Add a Note
+  {{ "NAV-BAR.ADD-NOTE" | translate}}
 </a>
 
 
 
-    <div class="nav-label">Espace <span class="loggedUser">({{currentUser?.firstName}} {{currentUser?.lastName}})</span></div>
+    <div class="nav-label">
+        {{"NAV-BAR.PERSONAL-SPACE" | translate}} <span class="loggedUser">({{currentUser?.firstName}} {{currentUser?.lastName}})</span>
+    </div>
 
     <span class="nav-item" (click)="toggleProfileDetailsView()" id="profile">
         <!-- Profile -->
@@ -89,7 +91,7 @@
             <circle cx="12" cy="8" r="4" />
             <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
         </svg>
-        Profile
+        {{"NAV-BAR.PROFILE" | translate}}
     </span>
 
 
@@ -121,7 +123,7 @@
             <path d="M16 17l5-5-5-5" />
             <path d="M21 12H9" />
         </svg>
-        Logout
+        {{"NAV-BAR.LOGOUT" | translate}}
     </span>   
 
 </nav>

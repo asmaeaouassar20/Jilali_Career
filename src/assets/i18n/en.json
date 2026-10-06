@@ -17,7 +17,6 @@
         "NOTE": "to sign in",
         "HOME": "Home"
     },
-
     "CAREER_ADVICE": {
         "TITLE": "Career Advice",
         "SUB-TITLE": "Tips to grow your developer career",
@@ -55,5 +54,17 @@
             "TITLE": "Prioritize work-life balance",
             "DESC": "Burnout is the biggest threat to a long software engineering career. Pace yourself, set clear boundaries, and maintain hobbies outside of technology."
         }
+    },
+    "NAV-BAR" : {
+        "TITLE" : "Jilali Career",
+        "DASHBOARD" : "Dashboard",
+        "REVIEW" : "Review",
+        "INTERVIEW-PRACTICE" : "Interview Practice",
+        "SUCCESS-STORIES" : "Success Stories",
+        "CAREER-ADVICE" : "Career Advice",
+        "ADD-NOTE" : "Add a Note",
+        "PERSONAL-SPACE" : "personal space",
+        "PROFILE" : "Profile",
+        "LOGOUT" : "Logout"
     }
 }

@@ -14,7 +14,7 @@
   padding: 32px 28px;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 20px 40px -24px rgba(99, 102, 241, 0.35);
+  box-shadow: 0 20px 40px -24px var(--indigo);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.25s ease, background 0.2s ease;
   animation: rise 0.55s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -34,8 +34,8 @@
   transform: translateY(-3px);
   border-color: var(--greeen);
   border-style: solid;
-  box-shadow: 0 24px 48px -20px rgba(99, 102, 241, 0.55);
-  background: linear-gradient(180deg, #1B2140, var(--surface-2));
+  box-shadow: 0 24px 48px -20px var(--indigo-light);
+  background: linear-gradient(180deg, var(--indigo-dark), var(--surface-2));
 }
 
 .card:active {
@@ -52,7 +52,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 22px -6px rgba(99, 102, 241, 0.7);
+  box-shadow: 0 10px 22px -6px var(--indigo);
   transition: transform 0.2s ease;
   background: linear-gradient(145deg, var(--text), var(--text-soft));
 }
@@ -64,7 +64,7 @@
 .icon-circle svg {
   width: 24px;
   height: 24px;
-  stroke: #fff;
+  stroke: var(--text);
   fill: none;
   stroke-width: 1.8;
   stroke-linecap: round;
@@ -83,7 +83,7 @@
   font-family: 'Fraunces', serif;
   font-weight:100;
   font-size: 14px;
-  color: #b0b4ea;
+  color: var(--indigo-light);
   letter-spacing: 1.5px;
   margin-bottom: 12px;
 }

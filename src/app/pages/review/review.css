@@ -34,9 +34,9 @@
     gap: 7px;
     padding: 5px 13px;
     border-radius: 999px;
-    background: rgba(99, 102, 241, 0.14);
-    border: 1px solid rgba(99, 102, 241, 0.35);
-    color: var(--indigo-light);
+    background: var(--indigo-light);
+    border: 1px solid var(--indigo-dark);
+    color: white;
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -82,7 +82,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 24px -14px rgba(99,102,241,0.4);
+    box-shadow: 0 12px 24px -14px var(--indigo-dark);
     transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease, transform 0.15s ease, box-shadow 0.2s ease;
   }
 
@@ -93,7 +93,7 @@
     border-color: var(--indigo);
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 16px 30px -12px rgba(99,102,241,0.75);
+    box-shadow: 0 16px 30px -12px var(--indigo-light);
   }
 
   .arrow-btn:active { transform: translateY(0) scale(0.95); }
@@ -125,10 +125,9 @@
     padding: 30px 28px;
     display: flex;
     flex-direction: column;
-    box-shadow:
-      0 1px 1px rgba(0,0,0,0.2),
-      0 8px 16px -6px rgba(0,0,0,0.35),
-      0 40px 70px -30px rgba(99,102,241,0.4);
+    box-shadow:      
+      0 8px 16px -6px var(--indigo-dark),
+      0 40px 70px -30px var(--indigo);
   }
 
   .qa-card .tag-row {
@@ -150,7 +149,7 @@
     font-weight: 600;
     font-size: 15px;
     color: #fff;
-    box-shadow: 0 8px 18px -6px rgba(99,102,241,0.7);
+    box-shadow: 0 8px 18px -6px var(--indigo);
   }
 
   .qa-card .difficulty {
@@ -160,9 +159,9 @@
     text-transform: uppercase;
     padding: 5px 11px;
     border-radius: 999px;
-    background: rgba(99,102,241,0.12);
-    color: var(--indigo-light);
-    border: 1px solid rgba(99,102,241,0.3);
+    background: var(--indigo);
+    color: #fff;
+    border: 1px solid var(--indigo-dark);
   }
 
   .qa-card .answer-label {
@@ -199,7 +198,7 @@
     font-weight: 600;
     font-size: 19px;
     line-height: 1.4;
-    color: #fff;
+    color: var(--text);
     letter-spacing: -0.01em;
   }
 
@@ -228,7 +227,7 @@
     width: 22px;
     border-radius: 4px;
     background: linear-gradient(90deg, var(--indigo-light), var(--indigo));
-    box-shadow: 0 0 8px rgba(99,102,241,0.7);
+    box-shadow: 0 0 8px var(--indigo);
   }
 
   .counter {

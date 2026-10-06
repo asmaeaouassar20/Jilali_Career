@@ -3,11 +3,12 @@ import { ReviewService } from '../../core/services/review/review-service';
 import { QuestionQuizWithOptions } from '../../core/model/interfaces/QuestionQuiz.model';
 import { PracticeService } from '../../core/services/practice/practice-service';
 import { NgClass } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-practice',
-  imports: [NgClass],
+  imports: [NgClass, TranslatePipe],
   templateUrl: './practice.html',
   styleUrl: './practice.css',
 })

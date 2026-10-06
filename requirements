@@ -9,3 +9,4 @@
 - dans "nav" on a : setting -> il faut penser à y ajouter des fonctionnalitées ex : changer la langue, changer le thème et la couleur, changer l'avatar par une phot perso
 - Ajouter un formulaire pour l'inscription
 - dans le fichier nommé : "profile-view-modal.html" décommentez : "modal-footer" pour implémenter les fonctionnalité correspendantes
+- il faut faire attention au contenu du quiz et de la révision, ça contient seulement de frontend JS

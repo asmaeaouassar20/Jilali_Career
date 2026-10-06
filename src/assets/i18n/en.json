@@ -78,6 +78,11 @@
     "REVIEW" : {
         "TITLE" : "Interview Prep",
         "SUB-TITLE" : "Web Development Q&A",
-        "SUB-TITLE2" : "Swipe through common front-end & JavaScript interview questions"
+        "SUB-TITLE2" : "Practice with interview questions"
+    },
+    "PRACTICE" : {
+         "TITLE" : "Interview Prep",
+        "SUB-TITLE" : "Web Development Q&A",
+        "SUB-TITLE2" : "Answer interview questions and test your knowledge"
     }
 }

@@ -78,6 +78,11 @@
     "REVIEW": {
         "TITLE": "Préparation aux entretiens",
         "SUB-TITLE": "Questions-réponses sur le développement web",
-        "SUB-TITLE2": "Faites défiler les questions courantes d’entretien sur le développement front-end et JavaScript"
+        "SUB-TITLE2": "Entraînez-vous avec des questions d’entretien"
+    },
+     "PRACTICE" : {
+         "TITLE" : "Préparation aux entretiens",
+        "SUB-TITLE" : "Développement Web et Q&A",
+        "SUB-TITLE2" : "Répondez aux questions d’entretien et testez vos connaissances"
     }
 }

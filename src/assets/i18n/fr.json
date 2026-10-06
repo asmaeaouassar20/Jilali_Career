@@ -66,5 +66,13 @@
         "PERSONAL-SPACE": "Espace personnel",
         "PROFILE": "Profil",
         "LOGOUT": "Se déconnecter"
+    },
+    "DASHBOARD": {
+        "TITLE": "Mes notes",
+        "SUB-TITLE": "Toutes vos notes enregistrées",
+        "BTN-TITLE": "Ajouter une note",
+        "TH1": "Titre",
+        "TH2": "Contenu",
+        "TH3": "Date de création"
     }
 }

@@ -5,11 +5,12 @@ import { DatePipe } from '@angular/common';
 import { TruncatePipe } from '../../pipe/truncate-pipe';
 import { min } from 'rxjs';
 import { RouterLink } from '@angular/router';
+import { TranslatePipe } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-dashboard',
-  imports: [DatePipe, TruncatePipe, RouterLink],
+  imports: [DatePipe, TruncatePipe, RouterLink,TranslatePipe],
   templateUrl: './dashboard.html',
   styleUrl: './dashboard.css',
 })
